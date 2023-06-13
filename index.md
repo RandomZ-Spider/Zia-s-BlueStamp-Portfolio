@@ -78,7 +78,7 @@ Don't forget to place the link of where to buy each component inside the quotati
 
 My Starter Project is the Custom Arduino Project, in which I used a Piezo buzzer to play 4 different sounds by pressing a different button. There is also a fifth button that increases the hertz of each sound by 100 to play new sounds.
 
-Materials
+Materials:
 * 1 Arduino Uno Microboard
 * 1 Arduino Protoshield
 * 1 Piezo Buzzer
