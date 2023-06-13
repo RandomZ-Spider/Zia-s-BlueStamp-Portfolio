@@ -3,11 +3,11 @@ Replace this text with a brief description (2-3 sentences) of your project. This
 
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
-| FirstName LastInitialOnly | School Name | Electrical Engineering | Incoming Senior
+| Zia S. | Archbishop Mitty Highschool | Computer Engineering | Rising Freshman |
 
 **Replace the BlueStamp logo below with an image of yourself and your completed project. Follow the guide [here](https://tomcam.github.io/least-github-pages/adding-images-github-pages-site.html) if you need help.**
 
-![Headstone Image](logo.svg)
+![Headstone Image](Zia-Headshot Large.png)
   
 # Final Milestone
 For your final milestone, explain the outcome of your project. Key details to include are:
@@ -76,9 +76,109 @@ Don't forget to place the link of where to buy each component inside the quotati
 
 # Starter Project
 
-My Starter Project is the Custom Arduino Project, in which I used a Piezo buzzer to play 4 different sounds by pressing a different button. There is also a fifth button that increases the hertz of each base sound by 100 to play new sounds.
+My Starter Project is the Custom Arduino Project, in which I used a Piezo buzzer to play 4 different sounds by pressing a different button. There is also a fifth button that increases the hertz of each sound by 100 to play new sounds.
 
-* Arduino Uno 
+Materials
+* 1 Arduino Uno Microboard
+* 1 Arduino Protoshield
+* 1 Piezo Buzzer
+* 4 10k Ohm Resistors
+* 5 Pushbuttons
+* 14 Male-To-Male Jumper Cables
+* 1 Solder & Soldering Iron
+* 1 USB Cable
+* 1 Large Breadboard
+
+Procedure: 
+1. First, I built my circuit: I attached 4 buttons on the middle of the breadboard and set up each button by connecting each button to a pin (pin 1, 2, 3, & 4), adding a resistor, and adding another jumper cable to the extended side of the breadboard. I then added the Piezo Buzzer, connected a jumper cable to pin 8, and connected another jumper cable to the extended side. Finally, I connected a jumper cable to ground and another one to the 5 volt pin.
+2. Next, I coded the following to make each button play a different sound when pressed:
+  ```
+const int buttonOne = 1;
+const int buttonTwo = 2;  
+const int buttonThree = 3;
+const int buttonFour = 4;
+const int buttonFive = 5;
+const int piezoBuzzer = 8;
+int sound = 100;
+
+void setup()
+{
+  // put your setup code here, to run once:
+  pinMode(buttonOne, INPUT);
+  pinMode(buttonTwo, INPUT);
+  pinMode(buttonThree, INPUT);
+  pinMode(buttonFour, INPUT);
+  pinMode(buttonFive, INPUT);
+  pinMode(piezoBuzzer, OUTPUT);
+}
+
+
+
+void loop() 
+{
+  // put your main code here, to run repeatedly:
+  int buttonOneState, buttonTwoState, buttonThreeState, buttonFourState, buttonFiveState; 
+
+  buttonOneState = digitalRead(buttonOne);
+  buttonTwoState = digitalRead(buttonTwo);
+  buttonThreeState = digitalRead(buttonThree);
+  buttonFourState = digitalRead(buttonFour);
+  buttonFiveState = digitalRead(buttonFive);
+
+  // Pressing Button 1
+  if (buttonOneState == LOW)
+  {
+    //digitalWrite(ledPin, HIGH);
+    tone(piezoBuzzer, sound + 100 , 100);
+  }
+  else
+  {
+    
+  }
+
+  // Pressing Button 2
+  if (buttonTwoState == LOW)
+  {
+    tone(piezoBuzzer, sound + 500, 100);
+  }
+  else
+  {
+    // turn off stuff
+  }
+
+  // Pressing Button 3
+  if (buttonThreeState == LOW)
+  {
+    tone(piezoBuzzer, sound + 1400, 100);
+  }
+  else
+  {
+    // turn off stuff
+  }
+
+  // Pressing Button 4
+  if (buttonFourState == LOW)
+  {
+    tone(piezoBuzzer, sound + 400, 100);
+  }
+  else
+  {
+    // turn off stuff
+  }
+
+  if (buttonFiveState == LOW)
+  {
+    sound += 100;
+  }
+  else
+  {
+    
+  }
+
+}
+```
+3. I connected the Arduino Uno to my computer using an USB cable and ran the code, able to play a sound for each button.
+4. Afterwards, I added a fifth button that changed the sound that was played when pressed.
 
 # Other Resources/Examples
 One of the best parts about Github is that you can view how other people set up their own work. Here are some past BSE portfolios that are awesome examples. You can view how they set up their portfolio, and you can view their index.md files to understand how they implemented different portfolio components.
