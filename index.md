@@ -121,6 +121,11 @@ Materials:
 Procedure: 
 1. First, I built my circuit: I attached 4 buttons on the middle of the breadboard and set up each button by connecting each button to a pin (pin 1, 2, 3, & 4), adding a resistor, and adding another jumper cable to the extended side of the breadboard. I then added the Piezo Buzzer, connected a jumper cable to pin 8, and connected another jumper cable to the extended side. Finally, I connected a jumper cable to ground and another one to the 5 volt pin.
 2. Next, I coded the following to make each button play a different sound when pressed:
+3. I connected the Arduino Uno to my computer using an USB cable and ran the code, able to play a sound for each button.
+4. Afterwards, I added a fifth button that changed the sound that was played when pressed.
+
+<h2>Piezo-Buzzer-DJ.ino</h2>
+
 ```c++
 const int buttonOne = 1;
 const int buttonTwo = 2;  
@@ -204,8 +209,6 @@ void loop()
 
 }
 ```
-3.  I connected the Arduino Uno to my computer using an USB cable and ran the code, able to play a sound for each button.
-4. Afterwards, I added a fifth button that changed the sound that was played when pressed.
 
 ![Picture of Starter Project](Piezo-Buzzer-Picture.jpg)
 
