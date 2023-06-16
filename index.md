@@ -37,6 +37,7 @@ For your first milestone, describe what your project is and how you plan to buil
 - Technical progress you've made so far
 - Challenges you're facing and solving in your future milestones
 - What your plan is to complete your project
+My first milestone was to assemble the Hexapod and calibrate the legs to their correct deafult positions. Before beginning assembly, I downloaded the Processing IDE which was required to run the software that would control the functions of the Hexapod such as walking and turning. The first day of building was a bust as I screwed the servo stands (what the servos will be attached to) on the wrong side of the main body of the Hexapod and unfortunetly had to unscrew everything which took up the rest of the day. The second day, I screwed the servo stands on the main body correctly and moved on to screwing servo stands to the various pieces of each leg. I then assembled the bases of each leg which included two servos, one to be attached to the main body and another to be attached to the leg. Then came the hardest
 
 **Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
 
