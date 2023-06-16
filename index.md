@@ -93,6 +93,7 @@ Materials:
 Procedure: 
 1. First, I built my circuit: I attached 4 buttons on the middle of the breadboard and set up each button by connecting each button to a pin (pin 1, 2, 3, & 4), adding a resistor, and adding another jumper cable to the extended side of the breadboard. I then added the Piezo Buzzer, connected a jumper cable to pin 8, and connected another jumper cable to the extended side. Finally, I connected a jumper cable to ground and another one to the 5 volt pin.
 2. Next, I coded the following to make each button play a different sound when pressed:
+
 ```c++
 const int buttonOne = 1;
 const int buttonTwo = 2;  
@@ -112,8 +113,6 @@ void setup()
   pinMode(buttonFive, INPUT);
   pinMode(piezoBuzzer, OUTPUT);
 }
-
-
 
 void loop() 
 {
