@@ -40,7 +40,7 @@ For your second milestone, explain what you've worked on since your previous mil
 
 | **Part** | **Note** | **Price** | **Link** |
 |:--:|:--:|:--:|:--:|
-| Item Name | What the item is used for | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
+| FREENOVE Hexapod Robot Kit with Remote | Has all of the necessary pieces to build the Hexapod, including the leg pieces, servos, and control board | $129.95 | <a href="https://www.amazon.com/Freenove-Raspberry-Crawling-Detailed-Tutorial/dp/B07FLVZ2DN?th=1"> Link </a> |
 |:--:|:--:|:--:|:--:|
 
 
