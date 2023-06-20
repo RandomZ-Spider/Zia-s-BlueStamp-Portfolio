@@ -41,7 +41,7 @@ For your second milestone, explain what you've worked on since your previous mil
 
 ![Picture of Hexapod](Picture-Hexapod.png)
 
-<img src="Picture-Hexapod.png"  width="1000" height="949.2929">
+<img src="Picture-Hexapod.png"  width="800" height="759">
 
 <h2>Robot.ino</h2>
   
