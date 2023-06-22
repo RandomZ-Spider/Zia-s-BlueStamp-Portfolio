@@ -295,11 +295,11 @@ void loop() {
 |:--:|:--:|:--:|:--:|
 | FREENOVE Hexapod Robot Kit with Remote | Has all of the necessary pieces to build the Hexapod, including the leg pieces, servos, and control board | $129.95 | <a href="https://www.amazon.com/Freenove-Raspberry-Crawling-Detailed-Tutorial/dp/B07FLVZ2DN?th=1"> Link </a> | <br>
 
-<p align="center">
+<!--<p align="center">
     <img src="Picture-Processing-Software.png"  width="650" height="518.8596">
 
 <p align="center">
-    <img src="Picture-Hexapod.png"  width="650" height=" 616.6875">
+    <img src="Picture-Hexapod.png"  width="650" height=" 616.6875">-->
 
 <iframe width="901" height="507" src="https://www.youtube.com/embed/74lIREHhu28" title="Zia S. Milestone 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
