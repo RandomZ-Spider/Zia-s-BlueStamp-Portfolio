@@ -247,11 +247,11 @@ My project is the Hexapod, a robot that walks on 6 legs using multiple servos an
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The next step is completing my second milestone: adding a battery holder to the Hexapod and programming a dance.<br><br>
 
 
-<p align="center">
+<!--<p align="center">
     <img src="Picture-Processing-Software.png"  width="650" height="518.8596">
 
 <p align="center">
-    <img src="Picture-Hexapod.png"  width="650" height=" 616.6875">
+    <img src="Picture-Hexapod.png"  width="650" height=" 616.6875">-->
 
 <h2>Robot.ino</h2>
   
