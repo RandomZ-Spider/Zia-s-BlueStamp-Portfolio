@@ -248,10 +248,10 @@ My project is the Hexapod, a robot that walks on 6 legs using multiple servos an
 
 
 <p align="center">
-    <img src="Picture-Processing-Software.png"  width="750" height="598.6842">
+    <img src="Picture-Processing-Software.png"  width="650" height="518.8596">
 
 <p align="center">
-    <img src="Picture-Hexapod.png"  width="100" height="711.5625">
+    <img src="Picture-Hexapod.png"  width="650" height=" 616.6875">
 
 <h2>Robot.ino</h2>
   
