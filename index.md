@@ -60,6 +60,7 @@ My project is the Hexapod, a robot that walks on 6 legs using multiple servos an
 <h2>Hexapod_Dance.ino</h2>
 
 ```c++
+
 #include <FNHR.h>
 
 FNHR robot;
