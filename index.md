@@ -54,7 +54,12 @@ With the battery holder, the Hexapod can now go anywhere, contributing to my fin
 
 <img src="Picture-Hexapod-V2.jpg"  width="800" height="598.2">
 
-![Picture Of Hexapod With Battery Holder](Picture-Hexapod-V2.jpg){ width="800" height="598.2" style="display: block; margin: 0 auto" }
+<img src="Picture-Hexapod-V2.jpg" 
+        alt="Hexapod With Battery Holder" 
+        width="800" 
+        height="598.2" 
+        style="display: block; margin: 0 auto" />
+
 
 <!--**Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**-->
 
