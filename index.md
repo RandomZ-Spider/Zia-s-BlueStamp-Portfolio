@@ -58,7 +58,7 @@ With the battery holder, the Hexapod can now go anywhere, contributing to my fin
         alt="Hexapod With Battery Holder" 
         width="800" 
         height="598.2" 
-        style="display: block; margin: 0 auto" />
+        style="display: block; margin: 10 auto" />
 
 
 <!--**Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**-->
