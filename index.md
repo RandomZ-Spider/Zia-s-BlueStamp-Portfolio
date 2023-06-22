@@ -1,4 +1,4 @@
-j# Hexapod
+# Hexapod
 <!--Replace this text with a brief description (2-3 sentences) of your project. This description should draw the reader in and make them interested in what you've built. You can include what the biggest challenges, takeaways, and triumphs from completing the project were. As you complete your portfolio, remember your audience is less familiar than you are with all that your project entails!-->
 
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
@@ -30,9 +30,9 @@ j# Hexapod
 <h2>Project</h2>
 My project is the Hexapod, a robot that walks on 6 legs using multiple servos and can be controlled with a computer, remote, and phone. <br>
 <h2>Components</h2>
-- Acrylic Parts
-- Calibration Graph
-- 
+* Acrylic Parts
+* Calibration Graph
+* dsf
 
 <img src="Picture-Hexapod-V2.jpg"  width="800" height="598.2">
 
