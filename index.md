@@ -28,6 +28,8 @@
 
 <DIV style="float: left; width: 50%">&nbsp;&nbsp;&nbsp;&nbsp;The next day, I cut out a new plate with drilled-out holes that I carefully measured using a caliber. Unfortunately, the holes were off, and I found out that I used the wrong side of the caliber to measure the holes, leading to deviations. I measured out a new plate and measured the holes to the micrometer, comparing the lengths to the Hexapod multiple times. This time, the holes fit the Hexapod perfectly, and I proceeded to paint the plate black as it matched the aesthetic of the Hexapod. After the paint dried, I hot-glued a velcro strap to the plate and attached it to the Hexapod with the battery. With the battery holder, the Hexapod can now go anywhere, contributing to my final milestone: adding an ultrasound sensor to the Hexapod and programming it to randomly walk around a room and use the ultrasound sensor to determine when it should dance. The second part of the final milestone is adding an LCD (Liquid Crystal Display) that shows what distance the ultrasound sensor measures. Before starting my final milestone, I need to learn more about ultrasound sensors and LCDs, how they work, and how to program them with Arduino.</DIV>
 
+![Picture of Processing Software](Picture-Hexapod-V2.jpg)
+
 <!--**Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**-->
 
 <h2>Hexapod_Dance.ino</h2>
