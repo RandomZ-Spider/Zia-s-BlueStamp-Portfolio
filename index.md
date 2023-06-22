@@ -52,10 +52,8 @@ For the second milestone, I cut out and drilled a battery holder that goes on to
 <h1>Next Step</h1>
 With the battery holder, the Hexapod can now go anywhere, contributing to my final milestone: adding an ultrasound sensor to the Hexapod and programming it to randomly walk around a room and use the ultrasound sensor to determine when it should dance. The second part of the final milestone is adding an LCD (Liquid Crystal Display) that shows what distance the ultrasound sensor measures. Before starting my final milestone, I need to learn more about ultrasound sensors and LCDs, how they work, and how to program them with Arduino. <br>
 
-<img src="Picture-Hexapod-V2.jpg"  width="800" height="598.2">
-
 <p align="center">
-    <img src="Picture-Hexapod-V2.jpg"  width="800" height="598.2">
+    <img src="Picture-Hexapod-V2.jpg"  width="700" height="523.4107">
 
 <!--**Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**-->
 
