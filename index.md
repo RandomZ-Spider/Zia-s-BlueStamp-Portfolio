@@ -220,6 +220,32 @@ void loop()
 &nbsp;&nbsp;&nbsp;&nbsp; My first milestone was to assemble the Hexapod and calibrate the legs to their correct default positions. Before beginning assembly, I downloaded the Processing IDE which was required to run the software that would control the functions of the Hexapod, including walking and turning. The first day of the building was a bust as I screwed the servo stands (what the servos will be attached to) on the wrong side of the main body of the Hexapod and unfortunately had to unscrew everything which took up the rest of the day. On the second day, I screwed the servo stands on the main body correctly and moved on to screwing servo stands to the various pieces of each leg. I then assembled the bases of each leg which included two servos, one to be attached to the main body and another to the leg. Then came the most frustrating part of assembly: attaching the servos. I first had to power the control board using a non-lithium battery and then connect each servo to the board so that the servos would rotate to their default position. I also had to attach each servo to each servo stand at a certain angle which took up a lot of time and went into the third day. On the third day, the control board's battery cable fritzed and I had to recalibrate the servos again because the new board had a different default setting for the servo's rotation. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;After I attached the servos and built all six legs, I used the Processing software for the Hexapod to check for any deviations in the leg angles and fix them. Before I could do the final calibration, I had to download the following Arduino libraries: FlexiTimer.zip, FNHR.zip, and RF24.zip. These libraries are necessary for using the default functions of the Hexapod and programming it. Using the FNHR library, I uploaded the default Hexapod sketch (which allows Processing software to control Hexapod) to the control board. I was able to control the Hexapod through the software, using it for the final step of the assembly: calibrating the legs into their correct positions using a paper guide and a calibration function that allowed me to move each leg to their coressponding position. I did this for all six legs; with assembly complete, I could move the Hexapod forward, backward, sideways, and turn around. The next step is completing my second milestone: adding a battery holder to the Hexapod and programming a dance.<br>
 
+<h1>Summary</h1>
+<h2>Project</h2>
+My project is the Hexapod, a robot that walks on 6 legs using multiple servos and can be controlled with a computer, remote, and phone. <br>
+
+<h2>Components</h2>
+<ul>
+  <li>Acrylic Parts</li>
+  <li>Calibration Graph</li>
+  <li>Servo Package</li>
+  <li>Freenove Crawling Robot Controller</li>
+  <li>WLAN Module</li>
+  <li>USB Cable</li>
+</ul> <br>
+
+<h2>How Components Work Together</h2>
+The acrylic parts make up the body of the Hexapod and hold the servos and robot controller in place. The robot controller controls all of the servos in order to perform actions such as walking, turning, or raising body height. The WLAN module that is attached to the Hexapod creates a hotspot that can be connected to through a computer or phone and then the Hexapod can be controlled through an app or the Processing software on the computer. The USB cable allows for Arduino sketches to be uploaded to the robot controller so that the Hexapod can have a custom program. <br>
+
+<h1>Progress</h1>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;For the first milestone, I assembled the whole Hexapod and downloaded the necessary software, such as the Arduino library FNHR and Processing IDE, to control the Hexapod using my computer, a remote, or my phone. I was also able to calibrate the legs of the Hexapod with the Processing IDE so that the Hexapod would function correctly. <br>
+
+<h1>Challenges Faced</h1>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The first day of the building was a bust as I screwed the servo stands (what the servos will be attached to) on the wrong side of the main body of the Hexapod and unfortunately had to unscrew everything which took up the rest of the day. On the second day, I screwed the servo stands on the main body correctly and moved on to screwing servo stands to the various pieces of each leg. I then assembled the bases of each leg which included two servos, one to be attached to the main body and another to the leg. Then came the most frustrating part of assembly: attaching the servos. I first had to power the control board using a non-lithium battery and then connect each servo to the board so that the servos would rotate to their default position. I also had to attach each servo to each servo stand at a certain angle which took up a lot of time and went into the third day. On the third day, the control board's battery cable fritzed and I had to recalibrate the servos again because the new board had a different default setting for the servo's rotation. 
+
+<h1>Next Step</h1>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;With the battery holder, the Hexapod can now go anywhere, contributing to my final milestone: adding an ultrasound sensor to the Hexapod and programming it to randomly walk around a room and use the ultrasound sensor to determine when it should dance. The second part of the final milestone is adding an LCD (Liquid Crystal Display) that shows what distance the ultrasound sensor measures. Before starting my final milestone, I need to learn more about ultrasound sensors and LCDs, how they work, and how to program them with Arduino. <br> <br>
+
 ![Picture of Processing Software](Picture-Processing-Software.png)
 
 <img src="Picture-Hexapod.png"  width="800" height="759">
