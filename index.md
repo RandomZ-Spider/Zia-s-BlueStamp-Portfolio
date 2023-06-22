@@ -38,7 +38,7 @@ My project is the Hexapod, a robot that walks on 6 legs using multiple servos an
   <li>Freenove Crawling Robot Controller</li>
   <li>WLAN Module</li>
   <li>USB Cable</li>
-</ul> <br>
+</ul>
 
 <h2>How Components Work Together</h2>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The acrylic parts make up the body of the Hexapod and hold the servos and robot controller in place. The robot controller controls all of the servos in order to perform actions such as walking, turning, or raising body height. The WLAN module that is attached to the Hexapod creates a hotspot that can be connected to through a computer or phone and then the Hexapod can be controlled through an app or the Processing software on the computer. The USB cable allows for Arduino sketches to be uploaded to the robot controller so that the Hexapod can have a custom program. <br>
