@@ -30,9 +30,9 @@
 <h2>Project</h2>
 My project is the Hexapod, a robot that walks on 6 legs using multiple servos and can be controlled with a computer, remote, and phone. <br>
 <h2>Components</h2>
-* Acrylic Parts
-* Calibration Graph
-* dsf
+* first point
+* second point
+* third point
 
 <img src="Picture-Hexapod-V2.jpg"  width="800" height="598.2">
 
