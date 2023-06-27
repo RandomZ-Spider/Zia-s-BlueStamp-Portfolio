@@ -22,19 +22,17 @@ My project is the Hexapod, a robot that walks on 6 legs using multiple servos an
 
 <h2>Components</h2>
 <ul>
-  <li>Acrylic Parts</li>
-  <li>Calibration Graph</li>
-  <li>Servo Package</li>
-  <li>Freenove Crawling Robot Controller</li>
-  <li>WLAN Module</li>
-  <li>USB Cable</li>
+  <li>Ultrasonic Sensor</li>
+  <li>0.96'' OLED Display</li>
+  <li>Jumper Cables</li>
+  <li>Small Breadboard</li>
 </ul>
 
 <h2>How Components Work Together</h2>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The acrylic parts make up the body of the Hexapod and hold the servos and robot controller in place. The robot controller controls all of the servos in order to perform actions such as walking, turning, or raising body height. The WLAN module that is attached to the Hexapod creates a hotspot that can be connected to through a computer or phone and then the Hexapod can be controlled through an app or the Processing software on the computer. The USB cable allows for Arduino sketches to be uploaded to the robot controller so that the Hexapod can have a custom program. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The ultrasonic sensor measure distance by sending out a <br>
 
 <h2>What I Accomplished</h2> <!-- What I did in previous milestones and what I did for third milestone. -->
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; In the previous milestones, I assembled and calibrated the Hexapod and programmed a dance for it. For the
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; In the previous milestones, I assembled and calibrated the Hexapod and then programmed a dance and built a battery stand for it. For the third milestone, I added an ultrasonic sensor and OLED display to the Hexapod and programmed the Hexapod to display the distance that the ultrasonic sensor measures on the OLED. I also programmed it to walk around randomly and dance whenever the ultrasonic sensor detects a distance of 5 cm or less.  
 
 <h2>Challenges & Triumps</h2>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;At first, I used Onshape, a 3D modeling software, to design a battery holder for the Hexapod. I later found out that due to the model's overhangs, it would take a very long time to 3D print the model and the necessary supports. With this in mind, I created a new 3D model for the battery holder, a plate with holes that fit screws, and the battery is held down to the plate using a hot-glued velcro strap. Although, one of my mentors, Ricky, said that it would be faster to cut out a wood plate by hand rather than print it since the 3D model was not intricate enough to justify using a 3D printer. The first time I cut out a battery holder and drilled holes for the screws, the holes did not match with Hexapod so I had to make a new plate. The second plate's also did not match and I later found out that I was using the wrong side of the caliper, a digital ruler, for measuring. For the third plate, I had to be very precise with the measurements, down to the micrometer. <br>
