@@ -16,16 +16,6 @@
 - A summary of key topics you learned about
 - What you hope to learn in the future after everything you've learned at BSE-->
 
-<!--**Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**-->
-
-<!--<iframe width="560" height="315" src="https://www.youtube.com/embed/F7M7imOVGug" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>-->
-
-# Second Milestone
-
-<!---&nbsp;&nbsp;&nbsp;&nbsp;My second milestone was to program a dance for the Hexapod, but I also added another part to it: assembling a battery holder. The Hexapod needs a 7.2-volt battery for power. Due to the battery's large size, it could not move very far before being dragged down. I used Onshape, a 3D modeling website, to model a battery holder that had a box-like shape and would be attached to the top of the Hexapod through the slots at each end of the main body. I later found out that due to the model's overhangs, it would take a very long time to 3D print the model and the necessary supports. With this in mind, I made a new 3D model for the battery holder, a plate with holes that fit screws, and the battery is held down to the plate using a hot-glued velcro strap. Although, one of my mentors, Ricky, said that it would be faster to cut out a wood plate by hand rather than print it since the 3D model was not intricate enough to justify using a 3D printer.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;To cut out the wood plate, I had to measure a good size for the plate that would not interfere with the legs' movement. The hardest part was measuring the holes with extreme precision; otherwise, the plate would not fit the Hexapod. The first plate I made barely fit the Hexapod, and it was not easy to assemble as the holes were off by a few millimeters. I hot glued a velcro strap to the plate and tightened the battery to the plate. Despite the plate's holes being off, the design did work, and the Hexapod could carry the battery around without having to drag it around. I would later make a new plate that fits the Hexapod better, but after making the prototype, I moved on to programming a dance for the Hexapod. The process for programming a dance was simple: all I had to do was make a new Arduino sketch, include the FNHR library (#include <FNHR>) to access Hexapod functions, and use those functions to make the Hexapod move in a way that resembled a dance. Only a few hours were necessary to program a dance that I thought was good for the Hexapod. I then uploaded the sketch to the control board so that whenever I turn on the Hexapod, it does a dance using many functions such as a robot.CrawlForward and robot.Rotate(). After programming the dance, I began making a new battery holder for the Hexapod, but the day ended.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;The next day, I cut out a new plate with drilled-out holes that I carefully measured using a caliber. Unfortunately, the holes were off, and I found out that I used the wrong side of the caliber to measure the holes, leading to deviations. I measured out a new plate and measured the holes to the micrometer, comparing the lengths to the Hexapod multiple times. This time, the holes fit the Hexapod perfectly, and I proceeded to paint the plate black as it matched the aesthetic of the Hexapod. After the paint dried, I hot-glued a velcro strap to the plate and attached it to the Hexapod with the battery. With the battery holder, the Hexapod can now go anywhere, contributing to my final milestone: adding an ultrasound sensor to the Hexapod and programming it to randomly walk around a room and use the ultrasound sensor to determine when it should dance. The second part of the final milestone is adding an LCD (Liquid Crystal Display) that shows what distance the ultrasound sensor measures. Before starting my final milestone, I need to learn more about ultrasound sensors and LCDs, how they work, and how to program them with Arduino.-->
-
 <h1>Summary</h1>
 <h2>Project</h2>
 My project is the Hexapod, a robot that walks on 6 legs using multiple servos and can be controlled with a computer, remote, and phone. <br>
@@ -43,28 +33,134 @@ My project is the Hexapod, a robot that walks on 6 legs using multiple servos an
 <h2>How Components Work Together</h2>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The acrylic parts make up the body of the Hexapod and hold the servos and robot controller in place. The robot controller controls all of the servos in order to perform actions such as walking, turning, or raising body height. The WLAN module that is attached to the Hexapod creates a hotspot that can be connected to through a computer or phone and then the Hexapod can be controlled through an app or the Processing software on the computer. The USB cable allows for Arduino sketches to be uploaded to the robot controller so that the Hexapod can have a custom program. <br>
 
-<h2>Progress</h2>
+<h2>What I Accomplished</h2> <!-- What I did in previous milestones and what I did for third milestone. -->
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;For the second milestone, I cut out and drilled a battery holder that goes on top of the Hexapod to hold the 7.2 volt battery. The Hexapod is now able to move around without being dragged down by the battery. I also programmed a dance for the Hexapod using the FNHR library to access functions that control certain aspects of the Hexapod's movement, such as walking and turning. Only a few hours were necessary to program the dance, and I then uploaded the sketch to the control board so that whenever I turn on the Hexapod, it does a dance using many functions such as a robot.CrawlForward and robot.Rotate().
 
-<h2>Challenges Faced</h2>
+<h2>Challenges & Triumps</h2>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;At first, I used Onshape, a 3D modeling software, to design a battery holder for the Hexapod. I later found out that due to the model's overhangs, it would take a very long time to 3D print the model and the necessary supports. With this in mind, I created a new 3D model for the battery holder, a plate with holes that fit screws, and the battery is held down to the plate using a hot-glued velcro strap. Although, one of my mentors, Ricky, said that it would be faster to cut out a wood plate by hand rather than print it since the 3D model was not intricate enough to justify using a 3D printer. The first time I cut out a battery holder and drilled holes for the screws, the holes did not match with Hexapod so I had to make a new plate. The second plate's also did not match and I later found out that I was using the wrong side of the caliper, a digital ruler, for measuring. For the third plate, I had to be very precise with the measurements, down to the micrometer. <br>
+
+<h2>What I Learned<h2>
 
 <h2>Next Step</h2>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;With the battery holder, the Hexapod can now go anywhere, contributing to my final milestone: adding an ultrasound sensor to the Hexapod and programming it to randomly walk around a room and use the ultrasound sensor to determine when it should dance. The second part of the final milestone is adding an LCD (Liquid Crystal Display) that shows what distance the ultrasound sensor measures. Before starting my final milestone, I need to learn more about ultrasound sensors and LCDs, how they work, and how to program them with Arduino. <br> <br>
 
-<img src="Picture-Hexapod-V2.jpg"  width="700" height="523.4107">
-
-<img src="Picture-Battery-Holder.jpg"  width="650" height="823.5069">
-
-<iframe width="901" height="507" src="https://www.youtube.com/embed/BK9GC6PL-00" title="Zia S. Milestone 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-<h2>Hexapod_Dance.ino</h2>
+<h2>Hexapod_Ultrasonic_OLED.ino</h2>
 
 ```c++
 #include <FNHR.h>
+#include <Wire.h>
+#include <Adafruit_GFX.h>
+#include <Adafruit_SSD1306.h>
+
+#define SCREEN_WIDTH 128 // OLED display width, in pixels
+#define SCREEN_HEIGHT 64 // OLED display height, in pixels
+
+// Declaration for an SSD1306 display connected to I2C (SDA, SCL pins)
+Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, -1);
 
 FNHR robot;
-int rotate = 20;
+const int trigPin = 2;
+const int echoPin = 3;
+long duration;
+int distanceCm;
+int danceCm = 5;
+bool Walk;
+
+void setup() 
+{
+  pinMode(trigPin, OUTPUT);
+  pinMode(echoPin, INPUT);
+
+  // OLED setup
+  Serial.begin(115200);
+
+  if(!display.begin(SSD1306_SWITCHCAPVCC, 0x3C)) { // Address 0x3D for 128x64
+    Serial.println(F("SSD1306 allocation failed"));
+    for(;;);
+  }
+  delay(2000);
+  robot.Start();
+  int distanceCm = 100;
+  Walk = true; 
+}
+void loop()
+{
+  //Ultrasonic sensor measuring
+  digitalWrite(trigPin, LOW);
+  delayMicroseconds(2);
+  digitalWrite(trigPin, HIGH);
+  delayMicroseconds(10);
+  digitalWrite(trigPin, LOW);
+  duration = pulseIn(echoPin, HIGH);
+  distanceCm = duration * 0.034 / 2;
+  Serial.println(distanceCm);
+
+  // Robot walking around randomly
+  if (distanceCm > danceCm && Walk == true)
+  {
+    robot.CrawlForward();
+  }
+  
+  if (distanceCm <= 5)
+  { 
+    Walk == false; 
+    Dance();
+  } 
+  
+  // Distance is less than 10
+  if (distanceCm < 10)
+  {
+    display.clearDisplay();
+    display.setTextSize(9);
+    display.setTextColor(WHITE);
+    display.setCursor(40, 0);
+    display.print(distanceCm);
+    display.display(); 
+    //delay(100);
+  }
+
+  // Distance more or equal to 10 and less than 100
+  if (distanceCm >= 10 && distanceCm < 100)
+  {
+    display.clearDisplay();
+    display.setTextSize(9);
+    display.setTextColor(WHITE);
+    display.setCursor(15, 0);
+    display.print(distanceCm);
+    display.display(); 
+    //delay(100);
+  }
+
+  // Distance more or equal to 100 and less or equal to than 400
+  if (distanceCm >= 100 && distanceCm <= 400)
+  {
+    display.clearDisplay();
+    display.setTextSize(7);
+    display.setTextColor(WHITE);
+    display.setCursor(1, 10);
+    display.print(distanceCm);
+    display.display(); 
+    //delay(100);
+  }
+
+  // Distance more than 400
+  if (distanceCm > 400)
+  {
+    display.clearDisplay();
+    display.setTextSize(4);
+    display.setTextColor(WHITE);
+    display.setCursor(30, 0);
+    display.println("Too");
+    display.setCursor(30,30);
+    display.println("Far");
+    display.display(); 
+    //delay(100);
+  }
+  
+}
+
+
+
 
 void Dance()
 {
@@ -197,19 +293,305 @@ void Dance()
 
   delay(100);
 
-
+  for (int i = 0; i < 16; i++)
+  {
+    robot.TurnRight();
+  }
+  distanceCm = 100;
+  Walk = true;
 }
+
+```
+
+<!--**Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**-->
+
+<!--<iframe width="560" height="315" src="https://www.youtube.com/embed/F7M7imOVGug" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>-->
+
+# Second Milestone
+
+<!---&nbsp;&nbsp;&nbsp;&nbsp;My second milestone was to program a dance for the Hexapod, but I also added another part to it: assembling a battery holder. The Hexapod needs a 7.2-volt battery for power. Due to the battery's large size, it could not move very far before being dragged down. I used Onshape, a 3D modeling website, to model a battery holder that had a box-like shape and would be attached to the top of the Hexapod through the slots at each end of the main body. I later found out that due to the model's overhangs, it would take a very long time to 3D print the model and the necessary supports. With this in mind, I made a new 3D model for the battery holder, a plate with holes that fit screws, and the battery is held down to the plate using a hot-glued velcro strap. Although, one of my mentors, Ricky, said that it would be faster to cut out a wood plate by hand rather than print it since the 3D model was not intricate enough to justify using a 3D printer.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;To cut out the wood plate, I had to measure a good size for the plate that would not interfere with the legs' movement. The hardest part was measuring the holes with extreme precision; otherwise, the plate would not fit the Hexapod. The first plate I made barely fit the Hexapod, and it was not easy to assemble as the holes were off by a few millimeters. I hot glued a velcro strap to the plate and tightened the battery to the plate. Despite the plate's holes being off, the design did work, and the Hexapod could carry the battery around without having to drag it around. I would later make a new plate that fits the Hexapod better, but after making the prototype, I moved on to programming a dance for the Hexapod. The process for programming a dance was simple: all I had to do was make a new Arduino sketch, include the FNHR library (#include <FNHR>) to access Hexapod functions, and use those functions to make the Hexapod move in a way that resembled a dance. Only a few hours were necessary to program a dance that I thought was good for the Hexapod. I then uploaded the sketch to the control board so that whenever I turn on the Hexapod, it does a dance using many functions such as a robot.CrawlForward and robot.Rotate(). After programming the dance, I began making a new battery holder for the Hexapod, but the day ended.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The next day, I cut out a new plate with drilled-out holes that I carefully measured using a caliber. Unfortunately, the holes were off, and I found out that I used the wrong side of the caliber to measure the holes, leading to deviations. I measured out a new plate and measured the holes to the micrometer, comparing the lengths to the Hexapod multiple times. This time, the holes fit the Hexapod perfectly, and I proceeded to paint the plate black as it matched the aesthetic of the Hexapod. After the paint dried, I hot-glued a velcro strap to the plate and attached it to the Hexapod with the battery. With the battery holder, the Hexapod can now go anywhere, contributing to my final milestone: adding an ultrasound sensor to the Hexapod and programming it to randomly walk around a room and use the ultrasound sensor to determine when it should dance. The second part of the final milestone is adding an LCD (Liquid Crystal Display) that shows what distance the ultrasound sensor measures. Before starting my final milestone, I need to learn more about ultrasound sensors and LCDs, how they work, and how to program them with Arduino.-->
+
+<h1>Summary</h1>
+<h2>Project</h2>
+My project is the Hexapod, a robot that walks on 6 legs using multiple servos and can be controlled with a computer, remote, and phone. <br>
+
+<h2>Components</h2>
+<ul>
+  <li>Acrylic Parts</li>
+  <li>Calibration Graph</li>
+  <li>Servo Package</li>
+  <li>Freenove Crawling Robot Controller</li>
+  <li>WLAN Module</li>
+  <li>USB Cable</li>
+</ul>
+
+<h2>How Components Work Together</h2>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The acrylic parts make up the body of the Hexapod and hold the servos and robot controller in place. The robot controller controls all of the servos in order to perform actions such as walking, turning, or raising body height. The WLAN module that is attached to the Hexapod creates a hotspot that can be connected to through a computer or phone and then the Hexapod can be controlled through an app or the Processing software on the computer. The USB cable allows for Arduino sketches to be uploaded to the robot controller so that the Hexapod can have a custom program. <br>
+
+<h2>Progress</h2>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;For the second milestone, I cut out and drilled a battery holder that goes on top of the Hexapod to hold the 7.2 volt battery. The Hexapod is now able to move around without being dragged down by the battery. I also programmed a dance for the Hexapod using the FNHR library to access functions that control certain aspects of the Hexapod's movement, such as walking and turning. Only a few hours were necessary to program the dance, and I then uploaded the sketch to the control board so that whenever I turn on the Hexapod, it does a dance using many functions such as a robot.CrawlForward and robot.Rotate().
+
+<h2>Challenges Faced</h2>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;At first, I used Onshape, a 3D modeling software, to design a battery holder for the Hexapod. I later found out that due to the model's overhangs, it would take a very long time to 3D print the model and the necessary supports. With this in mind, I created a new 3D model for the battery holder, a plate with holes that fit screws, and the battery is held down to the plate using a hot-glued velcro strap. Although, one of my mentors, Ricky, said that it would be faster to cut out a wood plate by hand rather than print it since the 3D model was not intricate enough to justify using a 3D printer. The first time I cut out a battery holder and drilled holes for the screws, the holes did not match with Hexapod so I had to make a new plate. The second plate's also did not match and I later found out that I was using the wrong side of the caliper, a digital ruler, for measuring. For the third plate, I had to be very precise with the measurements, down to the micrometer. <br>
+
+<h2>Next Step</h2>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;With the battery holder, the Hexapod can now go anywhere, contributing to my final milestone: adding an ultrasound sensor to the Hexapod and programming it to randomly walk around a room and use the ultrasound sensor to determine when it should dance. The second part of the final milestone is adding an LCD (Liquid Crystal Display) that shows what distance the ultrasound sensor measures. Before starting my final milestone, I need to learn more about ultrasound sensors and LCDs, how they work, and how to program them with Arduino. <br> <br>
+
+<img src="Picture-Hexapod-V2.jpg"  width="700" height="523.4107">
+
+<img src="Picture-Battery-Holder.jpg"  width="650" height="823.5069">
+
+<iframe width="901" height="507" src="https://www.youtube.com/embed/BK9GC6PL-00" title="Zia S. Milestone 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<h2>Hexapod_Dance.ino</h2>
+
+```c++
+#include <FNHR.h>
+#include <Wire.h>
+#include <Adafruit_GFX.h>
+#include <Adafruit_SSD1306.h>
+
+#define SCREEN_WIDTH 128 // OLED display width, in pixels
+#define SCREEN_HEIGHT 64 // OLED display height, in pixels
+
+// Declaration for an SSD1306 display connected to I2C (SDA, SCL pins)
+Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, -1);
+
+FNHR robot;
+const int trigPin = 2;
+const int echoPin = 3;
+long duration;
+int distanceCm;
+int danceCm = 5;
+bool Walk;
 
 void setup() 
 {
+  pinMode(trigPin, OUTPUT);
+  pinMode(echoPin, INPUT);
+
+  // OLED setup
+  Serial.begin(115200);
+
+  if(!display.begin(SSD1306_SWITCHCAPVCC, 0x3C)) { // Address 0x3D for 128x64
+    Serial.println(F("SSD1306 allocation failed"));
+    for(;;);
+  }
+  delay(2000);
   robot.Start();
-  Dance();
+  int distanceCm = 100;
+  Walk = true; 
+}
+void loop()
+{
+  //Ultrasonic sensor measuring
+  digitalWrite(trigPin, LOW);
+  delayMicroseconds(2);
+  digitalWrite(trigPin, HIGH);
+  delayMicroseconds(10);
+  digitalWrite(trigPin, LOW);
+  duration = pulseIn(echoPin, HIGH);
+  distanceCm = duration * 0.034 / 2;
+  Serial.println(distanceCm);
+
+  // Robot walking around randomly
+  if (distanceCm > danceCm && Walk == true)
+  {
+    robot.CrawlForward();
+  }
+  
+  if (distanceCm <= 5)
+  { 
+    Walk == false; 
+    Dance();
+  } 
+  
+  // Distance is less than 10
+  if (distanceCm < 10)
+  {
+    display.clearDisplay();
+    display.setTextSize(9);
+    display.setTextColor(WHITE);
+    display.setCursor(40, 0);
+    display.print(distanceCm);
+    display.display(); 
+  }
+
+  // Distance more or equal to 10 and less than 100
+  if (distanceCm >= 10 && distanceCm < 100)
+  {
+    display.clearDisplay();
+    display.setTextSize(9);
+    display.setTextColor(WHITE);
+    display.setCursor(15, 0);
+    display.print(distanceCm);
+    display.display(); 
+  }
+
+  // Distance more or equal to 100 and less or equal to than 400
+  if (distanceCm >= 100 && distanceCm <= 400)
+  {
+    display.clearDisplay();
+    display.setTextSize(7);
+    display.setTextColor(WHITE);
+    display.setCursor(1, 10);
+    display.print(distanceCm);
+    display.display(); 
+  }
+
+  // Distance more than 400
+  if (distanceCm > 400)
+  {
+    display.clearDisplay();
+    display.setTextSize(4);
+    display.setTextColor(WHITE);
+    display.setCursor(30, 0);
+    display.println("Too");
+    display.setCursor(30,30);
+    display.println("Far");
+    display.display(); 
+  }
+  
 }
 
-void loop() 
+void Dance()
 {
+  robot.SetActionSpeed(50);
+
+  for (int i = 0; i < 5; i++)
+  {
+    robot.CrawlBackward();
+  }
+
+  delay(500);
+
+  //Max height is 50
+
+  // Dance Move 1
+  for (int i = 0; i < 4; i++)
+  {
+    robot.SetActionSpeed(200);
+    robot.ChangeBodyHeight(50);
+    robot.ChangeBodyHeight(30);
+  }
   
-  
+  // Dance Move 2
+  robot.RotateBody(100, 0, 0);
+  robot.RotateBody(100, 100, 0);
+  robot.RotateBody(0, 100, 0);
+  robot.RotateBody(-100, 100, 0);
+  robot.RotateBody(-100, 0, 0);
+  robot.RotateBody(-100, -100, 0);
+  robot.RotateBody(0, -100, 0);
+  robot.RotateBody(100, -100, 0);
+  robot.RotateBody(0, 0, 0);
+
+  // Dance Move 3
+
+  // Each turn command is 5.625 degrees ish
+  for (int i = 0; i < 8; i++)
+  {
+    robot.TurnRight();
+  }
+
+  //Body twist
+  robot.RotateBody(0, 0, 100);
+  robot.RotateBody(0, 0, -100);
+  robot.RotateBody(0, 0, 0);
+
+  // Dance Move 4
+
+  // Square dance
+  for (int i = 0; i < 2; i++)
+  {
+    robot.CrawlForward();
+    robot.CrawlRight();
+    robot.CrawlBackward();
+    robot.CrawlLeft();
+    robot.CrawlForward();
+  }
+
+  // Dance Move 5
+
+  for (int i = 0; i < 8; i++)
+  {
+    robot.TurnLeft();
+  }
+
+  robot.ChangeBodyHeight(0);
+  robot.ChangeBodyHeight(50);
+
+  for (int i = 0; i < 8; i++)
+  {
+    robot.TurnLeft();
+  }
+
+  // Dance Move 6
+
+  //Body twist
+  robot.RotateBody(0, 0, 100);
+  robot.RotateBody(0, 0, -100);
+  robot.RotateBody(0, 0, 0);
+
+  // Square dance
+  for (int i = 0; i < 2; i++)
+  {
+    robot.CrawlForward();
+    robot.CrawlRight();
+    robot.CrawlBackward();
+    robot.CrawlLeft();
+    robot.CrawlForward();
+  }
+
+  delay(200);
+
+  // Dance Move 7
+
+  for (int i = 0; i < 8; i++)
+  {
+    robot.TurnRight();
+  }
+
+  robot.CrawlRight();
+  delay(500);
+  robot.CrawlLeft();
+  robot.CrawlLeft();
+  delay(600);
+
+  for (int i = 0; i < 4; i++)
+  {
+    robot.CrawlLeft();
+    robot.CrawlRight();
+  }
+
+  delay(900);
+  robot.CrawlRight();
+
+  // Bowing
+  delay(800);
+  robot.ChangeBodyHeight(50);
+  robot.RotateBody(50, 0, 0);
+  robot.ChangeBodyHeight(50);
+  robot.TurnRight();
+  robot.RotateBody(50, 0, 0);
+  robot.ChangeBodyHeight(50);
+  robot.TurnLeft();
+  robot.TurnLeft();
+  robot.RotateBody(50, 0, 0);
+  robot.RotateBody(0, 0, 0);
+  robot.TurnRight();
+  robot.ChangeBodyHeight(50);
+
+  delay(100);
+
+  for (int i = 0; i < 16; i++)
+  {
+    robot.TurnRight();
+  }
+  distanceCm = 100;
+  Walk = true;
 }
 
 ```
