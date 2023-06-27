@@ -5,7 +5,6 @@
 |:--:|:--:|:--:|:--:|
 | Zia S. | Archbishop Mitty Highschool | Computer Engineering | Rising Freshman |
 
-<!--**Replace the BlueStamp logo below with an image of yourself and your completed project. Follow the guide [here](https://tomcam.github.io/least-github-pages/adding-images-github-pages-site.html) if you need help.**-->
 
 ![Picture of Zia](Zia-Headshot-Large.png)
   
@@ -41,7 +40,7 @@ My project is the Hexapod, a robot that walks on 6 legs using multiple servos an
 I learned many importatnt topics during the project, such as the basics of Arduino and using breadboards, coding with the Arduino IDE to control different devices such as an ultrasonic sensor, LEDs, and piezo buzzers, how servo motors work, check for circuit short, and using a drill and saw.
 
 <h2>Next Step</h2>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br> <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; After learning everything I have learned at BlueStamp Engineering, I really want learn more advanced concepts in robotics and electrical engineering. <br><br> 
 
 <h2>Hexapod_Ultrasonic_OLED.ino</h2>
 
@@ -300,10 +299,6 @@ void Dance()
 
 # Second Milestone
 
-<!---&nbsp;&nbsp;&nbsp;&nbsp;My second milestone was to program a dance for the Hexapod, but I also added another part to it: assembling a battery holder. The Hexapod needs a 7.2-volt battery for power. Due to the battery's large size, it could not move very far before being dragged down. I used Onshape, a 3D modeling website, to model a battery holder that had a box-like shape and would be attached to the top of the Hexapod through the slots at each end of the main body. I later found out that due to the model's overhangs, it would take a very long time to 3D print the model and the necessary supports. With this in mind, I made a new 3D model for the battery holder, a plate with holes that fit screws, and the battery is held down to the plate using a hot-glued velcro strap. Although, one of my mentors, Ricky, said that it would be faster to cut out a wood plate by hand rather than print it since the 3D model was not intricate enough to justify using a 3D printer.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;To cut out the wood plate, I had to measure a good size for the plate that would not interfere with the legs' movement. The hardest part was measuring the holes with extreme precision; otherwise, the plate would not fit the Hexapod. The first plate I made barely fit the Hexapod, and it was not easy to assemble as the holes were off by a few millimeters. I hot glued a velcro strap to the plate and tightened the battery to the plate. Despite the plate's holes being off, the design did work, and the Hexapod could carry the battery around without having to drag it around. I would later make a new plate that fits the Hexapod better, but after making the prototype, I moved on to programming a dance for the Hexapod. The process for programming a dance was simple: all I had to do was make a new Arduino sketch, include the FNHR library (#include <FNHR>) to access Hexapod functions, and use those functions to make the Hexapod move in a way that resembled a dance. Only a few hours were necessary to program a dance that I thought was good for the Hexapod. I then uploaded the sketch to the control board so that whenever I turn on the Hexapod, it does a dance using many functions such as a robot.CrawlForward and robot.Rotate(). After programming the dance, I began making a new battery holder for the Hexapod, but the day ended.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;The next day, I cut out a new plate with drilled-out holes that I carefully measured using a caliber. Unfortunately, the holes were off, and I found out that I used the wrong side of the caliber to measure the holes, leading to deviations. I measured out a new plate and measured the holes to the micrometer, comparing the lengths to the Hexapod multiple times. This time, the holes fit the Hexapod perfectly, and I proceeded to paint the plate black as it matched the aesthetic of the Hexapod. After the paint dried, I hot-glued a velcro strap to the plate and attached it to the Hexapod with the battery. With the battery holder, the Hexapod can now go anywhere, contributing to my final milestone: adding an ultrasound sensor to the Hexapod and programming it to randomly walk around a room and use the ultrasound sensor to determine when it should dance. The second part of the final milestone is adding an LCD (Liquid Crystal Display) that shows what distance the ultrasound sensor measures. Before starting my final milestone, I need to learn more about ultrasound sensors and LCDs, how they work, and how to program them with Arduino.-->
-
 <h1>Summary</h1>
 <h2>Project</h2>
 My project is the Hexapod, a robot that walks on 6 legs using multiple servos and can be controlled with a computer, remote, and phone. <br>
@@ -495,10 +490,8 @@ void loop()
 
 # First Milestone
 
-<!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;My first milestone was to assemble the Hexapod and calibrate the legs to their correct default positions. Before beginning assembly, I downloaded the Processing IDE which was required to run the software that would control the functions of the Hexapod, including walking and turning. The first day of the building was a bust as I screwed the servo stands (what the servos will be attached to) on the wrong side of the main body of the Hexapod and unfortunately had to unscrew everything which took up the rest of the day. On the second day, I screwed the servo stands on the main body correctly and moved on to screwing servo stands to the various pieces of each leg. I then assembled the bases of each leg which included two servos, one to be attached to the main body and another to the leg. Then came the most frustrating part of assembly: attaching the servos. I first had to power the control board using a non-lithium battery and then connect each servo to the board so that the servos would rotate to their default position. I also had to attach each servo to each servo stand at a certain angle which took up a lot of time and went into the third day. On the third day, the control board's battery cable fritzed and I had to recalibrate the servos again because the new board had a different default setting for the servo's rotation. <br>
-&nbsp;&nbsp;&nbsp;&nbsp;After I attached the servos and built all six legs, I used the Processing software for the Hexapod to check for any deviations in the leg angles and fix them. Before I could do the final calibration, I had to download the following Arduino libraries: FlexiTimer.zip, FNHR.zip, and RF24.zip. These libraries are necessary for using the default functions of the Hexapod and programming it. Using the FNHR library, I uploaded the default Hexapod sketch (which allows Processing software to control Hexapod) to the control board. I was able to control the Hexapod through the software, using it for the final step of the assembly: calibrating the legs into their correct positions using a paper guide and a calibration function that allowed me to move each leg to their coressponding position. I did this for all six legs; with assembly complete, I could move the Hexapod forward, backward, sideways, and turn around. The next step is completing my second milestone: adding a battery holder to the Hexapod and programming a dance.<br>-->
-
 <h1>Summary</h1>
+
 <h2>Project</h2>
 My project is the Hexapod, a robot that walks on 6 legs using multiple servos and can be controlled with a computer, remote, and phone. <br>
 
@@ -565,18 +558,6 @@ void loop() {
 }
 
 ```
-
-<h2>Materials</h2>
-
-| **Part** | **Note** | **Price** | **Link** |
-|:--:|:--:|:--:|:--:|
-| FREENOVE Hexapod Robot Kit with Remote | Has all of the necessary pieces to build the Hexapod, including the leg pieces, servos, and control board | $129.95 | <a href="https://www.amazon.com/Freenove-Raspberry-Crawling-Detailed-Tutorial/dp/B07FLVZ2DN?th=1"> Link </a> | <br>
-
-<!--<p align="center">
-    <img src="Picture-Processing-Software.png"  width="650" height="518.8596">
-
-<p align="center">
-    <img src="Picture-Hexapod.png"  width="650" height=" 616.6875">-->
 
 <iframe width="901" height="507" src="https://www.youtube.com/embed/74lIREHhu28" title="Zia S. Milestone 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
