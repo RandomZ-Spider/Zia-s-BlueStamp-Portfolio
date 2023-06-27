@@ -116,7 +116,6 @@ void loop()
     display.setCursor(40, 0);
     display.print(distanceCm);
     display.display(); 
-    //delay(100);
   }
 
   // Distance more or equal to 10 and less than 100
@@ -128,7 +127,6 @@ void loop()
     display.setCursor(15, 0);
     display.print(distanceCm);
     display.display(); 
-    //delay(100);
   }
 
   // Distance more or equal to 100 and less or equal to than 400
@@ -140,7 +138,6 @@ void loop()
     display.setCursor(1, 10);
     display.print(distanceCm);
     display.display(); 
-    //delay(100);
   }
 
   // Distance more than 400
@@ -154,13 +151,9 @@ void loop()
     display.setCursor(30,30);
     display.println("Far");
     display.display(); 
-    //delay(100);
   }
   
 }
-
-
-
 
 void Dance()
 {
@@ -183,7 +176,6 @@ void Dance()
     robot.ChangeBodyHeight(30);
   }
   
-
   // Dance Move 2
   robot.RotateBody(100, 0, 0);
   robot.RotateBody(100, 100, 0);
@@ -300,6 +292,7 @@ void Dance()
   distanceCm = 100;
   Walk = true;
 }
+
 
 ```
 
@@ -349,112 +342,9 @@ My project is the Hexapod, a robot that walks on 6 legs using multiple servos an
 
 ```c++
 #include <FNHR.h>
-#include <Wire.h>
-#include <Adafruit_GFX.h>
-#include <Adafruit_SSD1306.h>
-
-#define SCREEN_WIDTH 128 // OLED display width, in pixels
-#define SCREEN_HEIGHT 64 // OLED display height, in pixels
-
-// Declaration for an SSD1306 display connected to I2C (SDA, SCL pins)
-Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, -1);
 
 FNHR robot;
-const int trigPin = 2;
-const int echoPin = 3;
-long duration;
-int distanceCm;
-int danceCm = 5;
-bool Walk;
-
-void setup() 
-{
-  pinMode(trigPin, OUTPUT);
-  pinMode(echoPin, INPUT);
-
-  // OLED setup
-  Serial.begin(115200);
-
-  if(!display.begin(SSD1306_SWITCHCAPVCC, 0x3C)) { // Address 0x3D for 128x64
-    Serial.println(F("SSD1306 allocation failed"));
-    for(;;);
-  }
-  delay(2000);
-  robot.Start();
-  int distanceCm = 100;
-  Walk = true; 
-}
-void loop()
-{
-  //Ultrasonic sensor measuring
-  digitalWrite(trigPin, LOW);
-  delayMicroseconds(2);
-  digitalWrite(trigPin, HIGH);
-  delayMicroseconds(10);
-  digitalWrite(trigPin, LOW);
-  duration = pulseIn(echoPin, HIGH);
-  distanceCm = duration * 0.034 / 2;
-  Serial.println(distanceCm);
-
-  // Robot walking around randomly
-  if (distanceCm > danceCm && Walk == true)
-  {
-    robot.CrawlForward();
-  }
-  
-  if (distanceCm <= 5)
-  { 
-    Walk == false; 
-    Dance();
-  } 
-  
-  // Distance is less than 10
-  if (distanceCm < 10)
-  {
-    display.clearDisplay();
-    display.setTextSize(9);
-    display.setTextColor(WHITE);
-    display.setCursor(40, 0);
-    display.print(distanceCm);
-    display.display(); 
-  }
-
-  // Distance more or equal to 10 and less than 100
-  if (distanceCm >= 10 && distanceCm < 100)
-  {
-    display.clearDisplay();
-    display.setTextSize(9);
-    display.setTextColor(WHITE);
-    display.setCursor(15, 0);
-    display.print(distanceCm);
-    display.display(); 
-  }
-
-  // Distance more or equal to 100 and less or equal to than 400
-  if (distanceCm >= 100 && distanceCm <= 400)
-  {
-    display.clearDisplay();
-    display.setTextSize(7);
-    display.setTextColor(WHITE);
-    display.setCursor(1, 10);
-    display.print(distanceCm);
-    display.display(); 
-  }
-
-  // Distance more than 400
-  if (distanceCm > 400)
-  {
-    display.clearDisplay();
-    display.setTextSize(4);
-    display.setTextColor(WHITE);
-    display.setCursor(30, 0);
-    display.println("Too");
-    display.setCursor(30,30);
-    display.println("Far");
-    display.display(); 
-  }
-  
-}
+int rotate = 20;
 
 void Dance()
 {
@@ -477,6 +367,7 @@ void Dance()
     robot.ChangeBodyHeight(30);
   }
   
+
   // Dance Move 2
   robot.RotateBody(100, 0, 0);
   robot.RotateBody(100, 100, 0);
@@ -586,14 +477,20 @@ void Dance()
 
   delay(100);
 
-  for (int i = 0; i < 16; i++)
-  {
-    robot.TurnRight();
-  }
-  distanceCm = 100;
-  Walk = true;
+
 }
 
+void setup() 
+{
+  robot.Start();
+  Dance();
+}
+
+void loop() 
+{
+  
+  
+}
 ```
 
 <!--<iframe width="560" height="315" src="https://www.youtube.com/embed/y3VAmNlER5Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>-->
