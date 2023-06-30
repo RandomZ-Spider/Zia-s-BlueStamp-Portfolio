@@ -12,6 +12,8 @@
 
 <iframe width="901" height="507" src="https://www.youtube.com/embed/uxMxAbv3sPU" title="Zia S. Milestone 3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
+<iframe width="901" height="507" src="https://www.youtube.com/embed/zHDSXegHkWQ" title="Hexapod Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 <img src="Picture-Hexapod-V3.jpg" width = "600" height = "553.7513">
 
 <!--For your final milestone, explain the outcome of your project. Key details to include are:
@@ -443,9 +445,9 @@ void loop()
 
 <iframe width="901" height="507" src="https://www.youtube.com/embed/74lIREHhu28" title="Zia S. Milestone 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-<img src="Picture-Processing-Software.png"  width="650" height="518.8596">
+<img src="Picture-Processing-Software.png"  width="500" height="399.1228">
 
-<img src="Picture-Hexapod.png"  width="650" height=" 616.6875">
+<img src="Picture-Hexapod.png"  width="500" height="474.375">
 
 <h1>Summary</h1>
 
