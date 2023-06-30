@@ -248,8 +248,8 @@ void MiniDance()
 # Second Milestone
 
 <p float="left">
-  <img src="Picture-Hexapod-V2.jpg" width="534.9527" height="400" />
-  <img src="Picture-Battery-Holder.jpg" width="315.7230" height="400" /> 
+  <img src="Picture-Hexapod-V2.jpg" width="534.9527" height="400">
+  <img src="Picture-Battery-Holder.jpg" width="315.7230" height="400"> 
 </p>
 
 <h1>Summary</h1>
