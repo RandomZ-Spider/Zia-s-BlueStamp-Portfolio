@@ -282,8 +282,6 @@ My project is the Hexapod, a robot that walks on 6 legs using multiple servos an
 
 <img src="Picture-Battery-Holder.jpg"  width="650" height="823.5069">-->
 
-<iframe width="901" height="507" src="https://www.youtube.com/embed/BK9GC6PL-00" title="Zia S. Milestone 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
 <h2>Hexapod_Dance.ino</h2>
 
 ```c++
