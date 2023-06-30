@@ -12,8 +12,10 @@
 
 <!--<img src="Picture-Hexapod-V3.jpg" width = "600" height = "553.7513">-->
 
-<p align="center">
-    <img src="Picture-Hexapod-V3.jpg" width = "600" height = "553.7513">
+<!--<p align="center">
+    <img src="Picture-Hexapod-V3.jpg" width = "600" height = "553.7513"> -->
+
+![Picture of Hexapod](Picture-Hexapod-V3.jpg){:style="display:block; margin-left:auto; margin-right:auto"}
 
 <!--For your final milestone, explain the outcome of your project. Key details to include are:
 - What you've accomplished since your previous milestone
