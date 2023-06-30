@@ -9,6 +9,12 @@
 ![Picture of Zia](Zia-Headshot-Large.png)
   
 # Final Milestone 
+
+<!--<img src="Picture-Hexapod-V3.jpg" width = "600" height = "553.7513">-->
+
+<p align="center">
+    <img src="Picture-Hexapod-V3.jpg" width = "600" height = "553.7513">
+
 <!--For your final milestone, explain the outcome of your project. Key details to include are:
 - What you've accomplished since your previous milestone
 - What your biggest challenges and triumphs were at BSE
@@ -21,20 +27,20 @@ My project is the Hexapod, a robot that walks on 6 legs using multiple servos an
 
 <h2>Components</h2>
 <ul>
-  <li>Ultrasonic Sensor</li>
+  <li>Ultrasonic Sensors</li>
   <li>0.96'' OLED Display</li>
   <li>Jumper Cables</li>
   <li>Small Breadboard</li>
 </ul>
 
 <h2>How Components Work Together</h2>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The ultrasonic sensor measures distance by sending out a 40,000 hertz sound wave and receives the pulse coming from the echo of the wave. The microcontroller (the controller board) uses a program to calculate the distance by taking the time it took for the sound wave to come back using the equation distance is equal to time divided by 2 (taking into account the wave going back and forth) times the speed of sound (340 m/s). The OLED display uses 8192 bits which turn on or off, and using the Adafruit library, the OLED can be programmed to display text and images by turning off and on certain bits. The system uses the ultrasonic sensor to get the distance in cm, and then the OLED takes the distance as an integer value and constantly displays the current distance. The Hexapod also uses the distance value to determine when to dance. The ultrasonic sensor and OLED display are both attached to a cardboard piece each to make it easier to mount to the Hexapod, and the pins poke through to allow connection to the controller board from behind. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The ultrasonic sensors measure distance by sending out a 40,000 hertz sound wave and receives the pulse coming from the echo of the wave. The microcontroller (the controller board) uses a program to calculate the distance by taking the time it took for the sound wave to come back using the equation distance is equal to time divided by 2 (taking into account the wave going back and forth) times the speed of sound (340 m/s). The OLED display uses 8192 bits which turn on or off, and using the Adafruit library, the OLED can be programmed to display text and images by turning off and on certain bits. The system uses the first ultrasonic sensor to get the distance in cm, and then the OLED takes the distance as an integer value and constantly displays the current distance. The Hexapod also uses the distance value to determine when to dance. The first ultrasonic sensor and OLED display are both attached to a cardboard piece each to make it easier to mount to the Hexapod, and the pins poke through to allow connection to the controller board from behind. The other two ultrasonic sensors are attatched to mounts which I modeled and 3D printed on both sides of the Hexapod. 
 
 <h2>What I Accomplished</h2> <!-- What I did in previous milestones and what I did for third milestone. -->
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; In the previous milestones, I assembled and calibrated the Hexapod, programmed a dance, and built a battery stand. For the third milestone, I added an ultrasonic sensor and OLED display to the Hexapod and programmed the Hexapod to display the distance that the ultrasonic sensor measures on the OLED. I also programmed it to walk around randomly and dance whenever the ultrasonic sensor detects a distance of 5 cm or less.  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; In the previous milestones, I assembled and calibrated the Hexapod, programmed a dance, and built a battery stand. For the third milestone, I added three ultrasonic sensors and an OLED display to the Hexapod. I also programmed the Hexapod to display the measured distance on the OLED. I also programmed it to walk around randomly and dance whenever the ultrasonic sensor detects a distance of 5 cm or less. Using the other two sensors, the Hexapod is also able to traverse through hallways, meaning that whenever it reaches a wall, the Hexapod will dance, check for a gap on each side, and turn towards the gap if found; otherwise, the Hexapod would turn 180 degrees and continue walking. Currently, the dance for the Hexapod is just a boogie, but originally it was longer and more varied. I had to change it because it would not be able to go through hallways due to the change in position.  
 
 <h2>Challenges & Triumps</h2>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Some challenges that I had during the project were assembling the Hexapod, building the battery stand, and wire management. I had a lot of trouble attaching the legs to the Hexapod's servo stands; the legs each needed the correct orientation to function properly. It was very tough to fix them on the servo stands correctly; some servos did not fit in the correct direction, and I had to force them into position. It took three days, but I fully assembled the Hexapod and completed the final calibration step to fix any deviations in the legs. The most frustrating part of building the battery holder was measuring the holes correctly. It took me three tries to     drill the holes to match the Hexapod's standoffs and fit smoothly. Wire management was time-confusing as the breadboard, which held the ground and power wires, was attached to a cardboard platform at the bottom of the Hexapod. I had to set up the wires from the breadboard so that they were facing the right way for easier connection, but some were too long. As a result, I had to bunch up the wires inside the Hexapod so that the legs did not pull them out which was very frustrating. The same was true for the Trig and Echo pin wires (ultrasonic sensor) and the SDA and SCL pin wires (OLED display). Mounting each device to the Hexapod was challenging as the wires resisted change. However, I triumphed over these challenges and produced a Hexapod that can measure distance and display it on an OLED display and dance. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Some challenges that I had during the project were assembling the Hexapod, building the battery stand, and wire management. I had a lot of trouble attaching the legs to the Hexapod's servo stands; the legs each needed the correct orientation to function properly. It was very tough to fix them on the servo stands correctly; some servos did not fit in the correct direction, and I had to force them into position. It took three days, but I fully assembled the Hexapod and completed the final calibration step to fix any deviations in the legs. The most frustrating part of building the battery holder was measuring the holes correctly. It took me three tries to drill the holes to match the Hexapod's standoffs and fit smoothly. Wire management was time-confusing as the breadboard, which held the ground and power wires, was attached to a cardboard platform at the bottom of the Hexapod. I had to set up the wires from the breadboard so that they were facing the right way for easier connection, but some were too long. As a result, I had to bunch up the wires inside the Hexapod so that the legs did not pull them out which was very frustrating. The same was true for the Trig and Echo pin wires (ultrasonic sensor) and the SDA and SCL pin wires (OLED display). Mounting each device to the Hexapod was challenging as the wires resisted change. It was harder for the two side mounts as I had to cut off the sides of the battery holder to fit the jumper cables for each side ultrasonic sensor; even then, it was still a challenge to screw each mount on. However, I triumphed over these challenges and produced a Hexapod that can measure distance and display it on an OLED display and dance. 
 
 <h2>What I Learned</h2>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I learned many essential topics during the project, such as the basics of Arduino and using breadboards, coding with the Arduino IDE to control different devices such as an ultrasonic sensor, LEDs, and piezo buzzers, how servo motors work, checking for circuit shorts, and using a drill and saw.
@@ -42,7 +48,7 @@ My project is the Hexapod, a robot that walks on 6 legs using multiple servos an
 <h2>Next Step</h2>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; After learning everything I have learned at BlueStamp Engineering, I really hope to learn more advanced concepts in robotics and electrical engineering. <br><br> 
 
-<h2>Hexapod_Ultrasonic_OLED.ino</h2>
+<h2>Hexapod_Ultrasonic2_OLED.ino</h2>
 
 ```c++
 #include <FNHR.h>
@@ -57,17 +63,38 @@ My project is the Hexapod, a robot that walks on 6 legs using multiple servos an
 Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, -1);
 
 FNHR robot;
-const int trigPin = 2;
-const int echoPin = 3;
+
+// Sensor 1
+const int trigPin1 = 2;
+const int echoPin1 = 3;
+
+// Sensor 2
+// Have to put in A0 and A1 manually
+
+// Sensor 3
+const int trigPin3 = 14;
+const int echoPin3 = 15;
+
 long duration;
-int distanceCm;
-int danceCm = 5;
-bool Walk;
+int distanceCm1;
+int distanceCm2;
+int distanceCm3;
+int danceCm = 8;
+bool Walk = true;
 
 void setup() 
 {
-  pinMode(trigPin, OUTPUT);
-  pinMode(echoPin, INPUT);
+  // Sensor 1
+  pinMode(trigPin1, OUTPUT);
+  pinMode(echoPin1, INPUT);
+
+  // Sensor 2
+  pinMode(A1, OUTPUT);
+  pinMode(A0, INPUT);
+
+  // Sensor 3
+  pinMode(trigPin3, OUTPUT);
+  pinMode(echoPin3, INPUT);
 
   // OLED setup
   Serial.begin(115200);
@@ -78,68 +105,113 @@ void setup()
   }
   delay(2000);
   robot.Start();
-  int distanceCm = 100;
-  Walk = true; 
+  int distanceCm1 = 100;
 }
 void loop()
 {
-  //Ultrasonic sensor measuring
-  digitalWrite(trigPin, LOW);
+  // Ultrasonic sensor 1 measuring
+  digitalWrite(trigPin1, LOW);
   delayMicroseconds(2);
-  digitalWrite(trigPin, HIGH);
+  digitalWrite(trigPin1, HIGH);
   delayMicroseconds(10);
-  digitalWrite(trigPin, LOW);
-  duration = pulseIn(echoPin, HIGH);
-  distanceCm = duration * 0.034 / 2;
-  Serial.println(distanceCm);
+  digitalWrite(trigPin1, LOW);
+  duration = pulseIn(echoPin1, HIGH);
+  distanceCm1 = duration * 0.034 / 2;
+  Serial.println(distanceCm1);
 
-  // Robot walking around randomly
-  if (distanceCm > danceCm && Walk == true)
+  // Ultrasonic sensor 2 measuring
+  digitalWrite(A1, LOW);
+  delayMicroseconds(2);
+  digitalWrite(A1, HIGH);
+  delayMicroseconds(10);
+  digitalWrite(A1, LOW);
+  duration = pulseIn(A0, HIGH);
+  distanceCm2 = duration * 0.034 / 2;
+  Serial.println(distanceCm2);
+
+  // Ultrasonic sensor 3 measuring
+  digitalWrite(trigPin3, LOW);
+  delayMicroseconds(2);
+  digitalWrite(trigPin3, HIGH);
+  delayMicroseconds(10);
+  digitalWrite(trigPin3, LOW);
+  duration = pulseIn(echoPin3, HIGH);
+  distanceCm3 = duration * 0.034 / 2;
+  Serial.println(distanceCm3);
+
+  // Robot walking around randomly and checking sides
+  if (distanceCm1 > danceCm && Walk == true)
   {
     robot.CrawlForward();
   }
-  
-  if (distanceCm <= 5)
-  { 
-    Walk == false; 
-    Dance();
-  } 
+  else
+  {
+    Walk = false;
+    MiniDance();
+    robot.ChangeBodyHeight(50);
+    delay(100);
+    
+    if (distanceCm2 > danceCm)
+    {
+      for (int i = 0; i < 16; i++)
+     {
+       robot.TurnRight();
+     }
+     Walk = true;
+    }
+    else if (distanceCm3 > danceCm)
+    {
+      for (int i = 0; i < 16; i++)
+     {
+       robot.TurnLeft();
+     }
+     Walk = true;
+    }
+    else
+    {
+      for (int i = 0; i < 32; i++)
+     {
+       robot.TurnRight();
+     }
+     Walk = true;
+    }
+  }
   
   // Distance is less than 10
-  if (distanceCm < 10)
+  if (distanceCm1 < 10)
   {
     display.clearDisplay();
     display.setTextSize(9);
     display.setTextColor(WHITE);
     display.setCursor(40, 0);
-    display.print(distanceCm);
+    display.print(distanceCm1);
     display.display(); 
   }
 
   // Distance more or equal to 10 and less than 100
-  if (distanceCm >= 10 && distanceCm < 100)
+  if (distanceCm1 >= 10 && distanceCm1 < 100)
   {
     display.clearDisplay();
     display.setTextSize(9);
     display.setTextColor(WHITE);
     display.setCursor(15, 0);
-    display.print(distanceCm);
+    display.print(distanceCm1);
     display.display(); 
   }
 
   // Distance more or equal to 100 and less or equal to than 400
-  if (distanceCm >= 100 && distanceCm <= 400)
+  if (distanceCm1 >= 100 && distanceCm1 <= 400)
   {
     display.clearDisplay();
     display.setTextSize(7);
     display.setTextColor(WHITE);
     display.setCursor(1, 10);
-    display.print(distanceCm);
+    display.print(distanceCm1);
     display.display(); 
   }
 
   // Distance more than 400
-  if (distanceCm > 400)
+  if (distanceCm1 > 400)
   {
     display.clearDisplay();
     display.setTextSize(4);
@@ -153,142 +225,21 @@ void loop()
   
 }
 
-void Dance()
+void MiniDance()
 {
   robot.SetActionSpeed(50);
-
-  for (int i = 0; i < 5; i++)
-  {
-    robot.CrawlBackward();
-  }
 
   delay(500);
 
   //Max height is 50
 
   // Dance Move 1
-  for (int i = 0; i < 4; i++)
+  for (int i = 0; i < 3; i++)
   {
     robot.SetActionSpeed(200);
     robot.ChangeBodyHeight(50);
     robot.ChangeBodyHeight(30);
   }
-  
-  // Dance Move 2
-  robot.RotateBody(100, 0, 0);
-  robot.RotateBody(100, 100, 0);
-  robot.RotateBody(0, 100, 0);
-  robot.RotateBody(-100, 100, 0);
-  robot.RotateBody(-100, 0, 0);
-  robot.RotateBody(-100, -100, 0);
-  robot.RotateBody(0, -100, 0);
-  robot.RotateBody(100, -100, 0);
-  robot.RotateBody(0, 0, 0);
-
-  // Dance Move 3
-
-  // Each turn command is 5.625 degrees ish
-  for (int i = 0; i < 8; i++)
-  {
-    robot.TurnRight();
-  }
-
-  //Body twist
-  robot.RotateBody(0, 0, 100);
-  robot.RotateBody(0, 0, -100);
-  robot.RotateBody(0, 0, 0);
-
-  // Dance Move 4
-
-  // Square dance
-  for (int i = 0; i < 2; i++)
-  {
-    robot.CrawlForward();
-    robot.CrawlRight();
-    robot.CrawlBackward();
-    robot.CrawlLeft();
-    robot.CrawlForward();
-  }
-
-  // Dance Move 5
-
-  for (int i = 0; i < 8; i++)
-  {
-    robot.TurnLeft();
-  }
-
-  robot.ChangeBodyHeight(0);
-  robot.ChangeBodyHeight(50);
-
-  for (int i = 0; i < 8; i++)
-  {
-    robot.TurnLeft();
-  }
-
-  // Dance Move 6
-
-  //Body twist
-  robot.RotateBody(0, 0, 100);
-  robot.RotateBody(0, 0, -100);
-  robot.RotateBody(0, 0, 0);
-
-  // Square dance
-  for (int i = 0; i < 2; i++)
-  {
-    robot.CrawlForward();
-    robot.CrawlRight();
-    robot.CrawlBackward();
-    robot.CrawlLeft();
-    robot.CrawlForward();
-  }
-
-  delay(200);
-
-  // Dance Move 7
-
-  for (int i = 0; i < 8; i++)
-  {
-    robot.TurnRight();
-  }
-
-  robot.CrawlRight();
-  delay(500);
-  robot.CrawlLeft();
-  robot.CrawlLeft();
-  delay(600);
-
-  for (int i = 0; i < 4; i++)
-  {
-    robot.CrawlLeft();
-    robot.CrawlRight();
-  }
-
-  delay(900);
-  robot.CrawlRight();
-
-  // Bowing
-  delay(800);
-  robot.ChangeBodyHeight(50);
-  robot.RotateBody(50, 0, 0);
-  robot.ChangeBodyHeight(50);
-  robot.TurnRight();
-  robot.RotateBody(50, 0, 0);
-  robot.ChangeBodyHeight(50);
-  robot.TurnLeft();
-  robot.TurnLeft();
-  robot.RotateBody(50, 0, 0);
-  robot.RotateBody(0, 0, 0);
-  robot.TurnRight();
-  robot.ChangeBodyHeight(50);
-
-  delay(100);
-
-  for (int i = 0; i < 16; i++)
-  {
-    robot.TurnRight();
-  }
-  distanceCm = 100;
-  Walk = true;
 }
 
 ```
@@ -298,6 +249,11 @@ void Dance()
 <!--<iframe width="560" height="315" src="https://www.youtube.com/embed/F7M7imOVGug" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>-->
 
 # Second Milestone
+
+<p float="left">
+  <img src="/Picture-Hexapod-V2.jpg" width="534.9527" height="400" />
+  <img src="Picture-Battery-Holder.jpg" width="315.7230" height="400" /> 
+</p>
 
 <h1>Summary</h1>
 <h2>Project</h2>
@@ -325,9 +281,9 @@ My project is the Hexapod, a robot that walks on 6 legs using multiple servos an
 <h2>Next Step</h2>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;With the battery holder, the Hexapod can now go anywhere, contributing to my final milestone: adding an ultrasound sensor to the Hexapod and programming it to randomly walk around a room and use the ultrasound sensor to determine when it should dance. The second part of the final milestone is adding an LCD (Liquid Crystal Display) that shows what distance the ultrasound sensor measures. Before starting my final milestone, I need to learn more about ultrasound sensors and LCDs, how they work, and how to program them with Arduino. <br> <br>
 
-<img src="Picture-Hexapod-V2.jpg"  width="700" height="523.4107">
+<!--<img src="Picture-Hexapod-V2.jpg"  width="700" height="523.4107">
 
-<img src="Picture-Battery-Holder.jpg"  width="650" height="823.5069">
+<img src="Picture-Battery-Holder.jpg"  width="650" height="823.5069">-->
 
 <iframe width="901" height="507" src="https://www.youtube.com/embed/BK9GC6PL-00" title="Zia S. Milestone 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -490,6 +446,10 @@ void loop()
 
 # First Milestone
 
+<img src="Picture-Processing-Software.png"  width="650" height="518.8596">
+
+<img src="Picture-Hexapod.png"  width="650" height=" 616.6875">
+
 <h1>Summary</h1>
 
 <h2>Project</h2>
@@ -516,11 +476,6 @@ My project is the Hexapod, a robot that walks on 6 legs using multiple servos an
 
 <h2>Next Step</h2>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The next step is completing my second milestone: adding a battery holder to the Hexapod and programming a dance.<br><br>
-
-
-<img src="Picture-Processing-Software.png"  width="650" height="518.8596">
-
-<img src="Picture-Hexapod.png"  width="650" height=" 616.6875">
 
 <h2>Robot.ino</h2>
   
