@@ -10,12 +10,7 @@
   
 # Final Milestone 
 
-<!--<img src="Picture-Hexapod-V3.jpg" width = "600" height = "553.7513">-->
-
-<!--<p align="center">
-    <img src="Picture-Hexapod-V3.jpg" width = "600" height = "553.7513"> -->
-
-![Picture of Hexapod](Picture-Hexapod-V3.jpg){:style="display:block; margin-left:auto; margin-right:auto"}
+<img src="Picture-Hexapod-V3.jpg" width = "600" height = "553.7513">
 
 <!--For your final milestone, explain the outcome of your project. Key details to include are:
 - What you've accomplished since your previous milestone
@@ -253,7 +248,7 @@ void MiniDance()
 # Second Milestone
 
 <p float="left">
-  <img src="/Picture-Hexapod-V2.jpg" width="534.9527" height="400" />
+  <img src="Picture-Hexapod-V2.jpg" width="534.9527" height="400" />
   <img src="Picture-Battery-Holder.jpg" width="315.7230" height="400" /> 
 </p>
 
