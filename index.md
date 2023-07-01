@@ -14,7 +14,10 @@
 
 <iframe width="901" height="507" src="https://www.youtube.com/embed/zHDSXegHkWQ" title="Hexapod Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
+<img src="Zia-Project.png" width = "600" height = "800">
+
 <img src="Picture-Hexapod-V3.jpg" width = "600" height = "553.7513">
+
 
 <!--For your final milestone, explain the outcome of your project. Key details to include are:
 - What you've accomplished since your previous milestone
