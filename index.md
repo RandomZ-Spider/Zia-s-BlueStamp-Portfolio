@@ -6,7 +6,7 @@
 | Zia S. | Archbishop Mitty Highschool | Computer Engineering | Rising Sophmore |
 
 
-![Picture of Zia](Zia.HEIC)
+![Picture of Zia](Zia.jpg)
   
 # Final Milestone 
 
