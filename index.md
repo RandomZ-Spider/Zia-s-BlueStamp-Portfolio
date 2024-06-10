@@ -6,7 +6,7 @@
 | Zia S. | Archbishop Mitty Highschool | Computer Engineering | Rising Sophmore |
 
 
-![Picture of Zia](Zia-Headshot-Large.png)
+![Picture of Zia](Zia.HEIC)
   
 # Final Milestone 
 
@@ -579,7 +579,7 @@ To watch the BSE tutorial on how to create a portfolio, click here.-->
 
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
-| Zia S. | Archbishop Mitty Highschool | Computer Engineering | Rising Sophmore |
+| Zia S. | Archbishop Mitty Highschool | Computer Engineering | Rising Freshman |
 
 ![Picture of Zia](Zia-Headshot-Large.png)
 
