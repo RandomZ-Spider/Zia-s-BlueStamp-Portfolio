@@ -535,9 +535,9 @@ Don't forget to place the link of where to buy each component inside the quotati
 
 # Starter Project (Retro Arcade Console)
 
-<iframe width="901" height="507" src="https://www.youtube.com/embed/VHd2mac3Z-E" title="Zia S. Starter Project" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="901" height="507" src="https://www.youtube.com/watch?v=hHAm_oHuuT8" title="Zia S. Starter Project" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-![Picture of Starter Project](Piezo-Buzzer-Picture.jpg)
+![Picture of Starter Project](Starter_Project2.jpg)
 
 My Starter Project is the Retro Arcade Console which uses multiple buttons, a digitron display, 2 dot matrixes, and a buzzer to create a full-on gaming experience with 5 retro games including Tetris and Snake.  
 
