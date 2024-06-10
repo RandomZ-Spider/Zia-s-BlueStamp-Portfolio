@@ -576,7 +576,13 @@ One of the best parts about Github is that you can view how other people set up 
 - [Example 3](https://arneshkumar.github.io/arneshbluestamp/)
 
 To watch the BSE tutorial on how to create a portfolio, click here.-->
-  
+
+| **Engineer** | **School** | **Area of Interest** | **Grade** |
+|:--:|:--:|:--:|:--:|
+| Zia S. | Archbishop Mitty Highschool | Computer Engineering | Rising Sophmore |
+
+![Picture of Zia](Zia-Headshot-Large.png)
+
 # Final Milestone (Hexapod)
 
 <iframe width="901" height="507" src="https://www.youtube.com/embed/uxMxAbv3sPU" title="Zia S. Milestone 3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
