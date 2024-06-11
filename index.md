@@ -8,7 +8,7 @@
 
 ![Picture of Zia](Zia.jpg)
   
-# Final Milestone 
+# Final Milestone (A.I. Powered Claw Car)
 
 <iframe width="901" height="507" src="https://www.youtube.com/embed/uxMxAbv3sPU" title="Zia S. Milestone 3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -27,7 +27,7 @@
 
 <h1>Summary</h1>
 <h2>Project</h2>
-My project is the Hexapod, a robot that walks on 6 legs using multiple servos and can be controlled with a computer, remote, and phone. <br>
+My project is an A.I. Powered Claw Car, a robot that travels using 2 wheels controlled by servos and has a claw attatched on top. Using a raspberry camera module and an object identification A.I. program, it is capable of identifying various objects based a training data set and pick them up with the claw. <br>
 
 <h2>Components</h2>
 <ul>
@@ -250,7 +250,7 @@ void MiniDance()
 
 <!--**Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**-->
 
-# Second Milestone
+# Second Milestone (A.I. Powered Claw Car)
 
 <iframe width="901" height="507" src="https://www.youtube.com/embed/BK9GC6PL-00" title="Zia S. Milestone 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -261,7 +261,7 @@ void MiniDance()
 
 <h1>Summary</h1>
 <h2>Project</h2>
-My project is the Hexapod, a robot that walks on 6 legs using multiple servos and can be controlled with a computer, remote, and phone. <br>
+My project is an A.I. Powered Claw Car, a robot that travels using 2 wheels controlled by servos and has a claw attatched on top. Using a raspberry camera module and an object identification A.I. program, it is capable of identifying various objects based a training data set and pick them up with the claw. <br>
 
 <h2>Components</h2>
 <ul>
@@ -444,7 +444,7 @@ void loop()
 }
 ```
 
-# First Milestone
+# First Milestone (A.I. Powered Claw Car)
 
 <iframe width="901" height="507" src="https://www.youtube.com/embed/74lIREHhu28" title="Zia S. Milestone 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -455,63 +455,227 @@ void loop()
 <h1>Summary</h1>
 
 <h2>Project</h2>
-My project is the Hexapod, a robot that walks on 6 legs using multiple servos and can be controlled with a computer, remote, and phone. <br>
+My project is an A.I. Powered Claw Car, a robot that travels using 2 wheels controlled by servos and has a claw attatched on top. Using a raspberry camera module and an object identification A.I. program, it is capable of identifying various objects based a training data set and pick them up with the claw. <br>
 
 <h2>Components</h2>
 <ul>
-  <li>Acrylic Parts</li>
-  <li>Calibration Graph</li>
-  <li>Servo Package</li>
-  <li>Freenove Crawling Robot Controller</li>
+  <li>Acrylic Plate</li>
+  <li>Arduino Uno</li>
+  <li>Mini Breadboard</li>
+  <li>TT Wheel</li>
+  <li>1" Wheel</li>
+  <li>TT Motor</li>
   <li>WLAN Module</li>
   <li>USB Cable</li>
+  <li>Jumper Cables</li>
+  <li>9V Battery</li>
+  <li>IR Reciever</li>
+  <li>IR Controller</li>
+  <li>Velcro</li>
 </ul> <br>
 
 <h2>How Components Work Together</h2>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The acrylic parts make up the body of the Hexapod and hold the servos and robot controller in place. The robot controller controls all of the servos in order to perform actions such as walking, turning, or raising body height. The WLAN module that is attached to the Hexapod creates a hotspot that can be connected to through a computer or phone and then the Hexapod can be controlled through an app or the Processing software on the computer. The USB cable allows for Arduino sketches to be uploaded to the robot controller so that the Hexapod can have a custom program. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The acrylic plate acts as the base of the car; everything including the servos, Arduino Uno, mini breadboard, L9110 module, universal wheel, and 9V Battery is attatched to it. Whenever a button is pressed on the IR controller, the IR reciever recieves the signal and sends it to the Arduino Uno. The Uno then processes the signal and depending on the button pressed, sends a signal to the L9110 module with the specific activation truth table. This activates the motors and moves the car. 
 
 <h2>Progress</h2>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;For the first milestone, I assembled the whole Hexapod and downloaded the necessary software, such as the Arduino libraries FlexiTimer.zip, FNHR.zip, and RF24.zip and the Processing IDE, to control the Hexapod using my computer, a remote, or my phone. I was also able to calibrate the legs of the Hexapod with the Processing IDE so that the Hexapod would function correctly. 
-
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;For the first milestone, I assembled the whole car and downloaded the necessary software, such as the Arduino library IRRemote and the Processing IDE, to control the car using the IR remote. 
 <h2>Challenges Faced</h2>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The first day of the building was a bust as I screwed the servo stands (what the servos will be attached to) on the wrong side of the main body of the Hexapod and unfortunately had to unscrew everything which took up the rest of the day. On the second day, I screwed the servo stands on the main body correctly and moved on to screwing servo stands to the various pieces of each leg. I then assembled the bases of each leg which included two servos, one to be attached to the main body and another to the leg. Then came the most frustrating part of assembly: attaching the servos. I first had to power the control board using a non-lithium battery and then connect each servo to the board so that the servos would rotate to their default position. I also had to attach each servo to each servo stand at a certain angle which took up a lot of time and went into the third day. On the third day, the control board's battery cable fritzed and I had to recalibrate the servos again because the new board had a different default setting for the servo's rotation. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; I had a few troubles attatching the motors to the acrylic plate as the window for attatchment was very tight and took me a bit to attatch. I also wasted much time looking for specific standoffs that were missing from my kit that were needed for the universal wheel and ended up having to use slightly longer standoffs. 
 
 <h2>Next Step</h2>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The next step is completing my second milestone: adding a battery holder to the Hexapod and programming a dance.<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The next step is completing my second milestone: assembling the claw and programming it.<br><br>
 
-<h2>Robot.ino</h2>
+<h2>Car_Remote_Control.ino</h2>
   
 ```c++
-/*
-* Sketch     Default function sketch for robot
-* Platform   Freenove Hexapod Robot (Compatible with Arduino/Genuino Mega 2560)
-* Brief      This sketch is used to show default function of Freenove Hexapod Robot.
-*            You can control the robot by remote control, Android device or computer.
-*            Changing the code will make the default function not working properly.
-* Author     Ethan Pan @ Freenove (support@freenove.com)
-* Date       2020/04/24
-* Copyright  Copyright © Freenove (http://www.freenove.com)
-* License    Creative Commons Attribution ShareAlike 3.0
-*            (http://creativecommons.org/licenses/by-sa/3.0/legalcode)
-* -----------------------------------------------------------------------------------------------*/
+#include <IRremote.h>
 
-#ifndef ARDUINO_AVR_MEGA2560
-#error Wrong board. Please choose "Arduino/Genuino Mega or Mega 2560"
-#endif
+const int IR_RECEIVE_PIN = 12;  // Define the pin number for the IR Sensor
 
-// Include FNHR (Freenove Hexapod Robot) library
-#include <FNHR.h>
+const int A_1B = 5;
+const int A_1A = 6;
+const int B_1B = 9;
+const int B_1A = 10;
 
-FNHR robot;
+
+int speed = 150;
 
 void setup() {
-  // Start Freenove Hexapod Robot with default function
-  robot.Start(true);
+  Serial.begin(9600);
+
+  //motor
+  pinMode(A_1B, OUTPUT);
+  pinMode(A_1A, OUTPUT);
+  pinMode(B_1B, OUTPUT);
+  pinMode(B_1A, OUTPUT);
+
+  //IR remote
+  IrReceiver.begin(IR_RECEIVE_PIN, ENABLE_LED_FEEDBACK);  // Start the IR receiver // Start the receiver
+  Serial.println("REMOTE CONTROL START");
+
 }
 
 void loop() {
-  // Update Freenove Hexapod Robot
-  robot.Update();
+
+  if (IrReceiver.decode()) {
+    //    Serial.println(results.value,HEX);
+    String key = decodeKeyValue(IrReceiver.decodedIRData.command);
+    if (key != "ERROR") {
+      Serial.println(key);
+
+      if (key == "+") {
+        speed += 50;
+      } else if (key == "-") {
+        speed -= 50;
+      } else if (key == "2") {
+        moveForward(speed);
+        delay(1000);
+      } else if (key == "1") {
+        moveLeft(speed);
+      } else if (key == "3") {
+        moveRight(speed);
+      } else if (key == "4") {
+        turnLeft(speed);
+      } else if (key == "6") {
+        turnRight(speed);
+      } else if (key == "7") {
+        backLeft(speed);
+      } else if (key == "9") {
+        backRight(speed);
+      } else if (key == "8") {
+        moveBackward(speed);
+        delay(1000);
+      }
+
+      if (speed >= 255) {
+        speed = 255;
+      }
+      if (speed <= 0) {
+        speed = 0;
+      }
+      delay(500);
+      stopMove();
+    }
+
+    IrReceiver.resume();  // Enable receiving of the next value
+  }
+}
+
+void moveForward(int speed) {
+  analogWrite(A_1B, 0);
+  analogWrite(A_1A, speed);
+  analogWrite(B_1B, speed);
+  analogWrite(B_1A, 0);
+}
+
+void moveBackward(int speed) {
+  analogWrite(A_1B, speed);
+  analogWrite(A_1A, 0);
+  analogWrite(B_1B, 0);
+  analogWrite(B_1A, speed);
+}
+
+void turnRight(int speed) {
+  analogWrite(A_1B, speed);
+  analogWrite(A_1A, 0);
+  analogWrite(B_1B, speed);
+  analogWrite(B_1A, 0);
+}
+
+void turnLeft(int speed) {
+  analogWrite(A_1B, 0);
+  analogWrite(A_1A, speed);
+  analogWrite(B_1B, 0);
+  analogWrite(B_1A, speed);
+}
+
+void moveLeft(int speed) {
+  analogWrite(A_1B, 0);
+  analogWrite(A_1A, speed);
+  analogWrite(B_1B, 0);
+  analogWrite(B_1A, 0);
+}
+
+void moveRight(int speed) {
+  analogWrite(A_1B, 0);
+  analogWrite(A_1A, 0);
+  analogWrite(B_1B, speed);
+  analogWrite(B_1A, 0);
+}
+
+void backLeft(int speed) {
+  analogWrite(A_1B, speed);
+  analogWrite(A_1A, 0);
+  analogWrite(B_1B, 0);
+  analogWrite(B_1A, 0);
+}
+
+void backRight(int speed) {
+  analogWrite(A_1B, 0);
+  analogWrite(A_1A, 0);
+  analogWrite(B_1B, 0);
+  analogWrite(B_1A, speed);
+}
+
+void stopMove() {
+  analogWrite(A_1B, 0);
+  analogWrite(A_1A, 0);
+  analogWrite(B_1B, 0);
+  analogWrite(B_1A, 0);
+}
+
+
+String decodeKeyValue(long result)
+{
+  switch(result){
+    case 0x16:
+      return "0";
+    case 0xC:
+      return "1"; 
+    case 0x18:
+      return "2"; 
+    case 0x5E:
+      return "3"; 
+    case 0x8:
+      return "4"; 
+    case 0x1C:
+      return "5"; 
+    case 0x5A:
+      return "6"; 
+    case 0x42:
+      return "7"; 
+    case 0x52:
+      return "8"; 
+    case 0x4A:
+      return "9"; 
+    case 0x9:
+      return "+"; 
+    case 0x15:
+      return "-"; 
+    case 0x7:
+      return "EQ"; 
+    case 0xD:
+      return "U/SD";
+    case 0x19:
+      return "CYCLE";         
+    case 0x44:
+      return "PLAY/PAUSE";   
+    case 0x43:
+      return "FORWARD";   
+    case 0x40:
+      return "BACKWARD";   
+    case 0x45:
+      return "POWER";   
+    case 0x47:
+      return "MUTE";   
+    case 0x46:
+      return "MODE";       
+    case 0x0:
+      return "ERROR";   
+    default :
+      return "ERROR";
+    }
+}
 }
 
 ```
