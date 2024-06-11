@@ -448,9 +448,7 @@ void loop()
 
 <iframe width="901" height="507" src="https://www.youtube.com/embed/74lIREHhu28" title="Zia S. Milestone 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-<img src="Picture-Processing-Software.png"  width="500" height="399.1228">
-
-<img src="Picture-Hexapod.png"  width="500" height="474.375">
+<img src="Car_Pic.jpg"  width="500" height="474.375">
 
 <h1>Summary</h1>
 
