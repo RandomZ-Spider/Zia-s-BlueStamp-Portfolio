@@ -3,7 +3,7 @@
 
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
-| Zia S. | Archbishop Mitty Highschool | Computer Engineering | Rising Sophmore |
+| Zia S. | Archbishop Mitty Highschool | Computer Engineering | Incoming Sophmore |
 
 
 ![Picture of Zia](Zia.jpg)
@@ -741,7 +741,7 @@ To watch the BSE tutorial on how to create a portfolio, click here.-->
 
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
-| Zia S. | Archbishop Mitty Highschool | Computer Engineering | Rising Freshman |
+| Zia S. | Archbishop Mitty Highschool | Computer Engineering | Incoming Freshman |
 
 ![Picture of Zia](Zia-Headshot-Large.png)
 
