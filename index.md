@@ -264,19 +264,23 @@ My project is an A.I. Powered Claw Car, a robot that travels using 2 wheels cont
 
 <h2>Components</h2>
 <ul>
-  <li>Acrylic Parts</li>
-  <li>Calibration Graph</li>
+  <li>Acrylic Plates</li>
+  <li>Arduino Nano</li>
+  <li>Arduino Shield</li>
   <li>Servo Package</li>
-  <li>Freenove Crawling Robot Controller</li>
-  <li>WLAN Module</li>
+  <li>Joysticks</li>
   <li>USB Cable</li>
+  <li>Jumper Cables</li>
+  <li>Battery Case</li>
+  <li>AA Batteries</li>
+  <li>Turntable</li>
 </ul>
 
 <h2>How Components Work Together</h2>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The acrylic parts of the claw act as the base and main body that house the servos, Arduino Nano, and Arduino shield. The base of the claw has a servo that rotates a ball-bearing wheel, rotatating the entire claw. Two other servos control the arm of the claw, making it capable of moving up or down. The final servo controls the actual claw; it is attached to one claw half with a gear at the end that is in contact with the gear of the other claw half so when the servo rotates, the entire claw grabs or releases. The servos are controlled by two joysticks that are connected to the Arduino Nano; one controls the rotation and position of the claw arm and the other control the claw itself. 
 
 <h2>Progress</h2>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;For the second milestone, I had to cut the ground and voltage wires of the battery port of the claw and solder them to a new battery case as lithium batteries are not allowed in Bluestamp projects. Before beginning assembly, I used an Arduino program provided by the pdf claw tutorial to adjust the servos to all be 90°, using a USB to connect the Arduino Nano to my computer. I then assembled the stand for the Arduino Nano and shield using standoffs and did the same for the ball-bearing base of the claw arm. Next, I added the servo for the base of the claw arm and attached a rectangular piece to it that would allow the servo to rotate the entire base. I then screwed together the claw arm with two servos, making sure that they were straight. Finally, I screwed in the servo for the claw and attached the claw half to it and lined up the other half with the first. I then assembled a simple controller using one of the acrylic plates and screwing in two joysticks. I then did the necessary wiring for the claw to properly work and be controllled by the claw. I uploaded the code provided by the tutorial to the Arduino Nano, allowing me to control the claw with the joysticks. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;For the second milestone, I had to cut the ground and voltage wires of the battery port of the claw and solder them to a new battery case as lithium batteries are not allowed in Bluestamp projects. Before beginning assembly, I used the Arduino program, Servo_90_ADJ.ino, provided by the pdf claw tutorial to adjust the servos to all be 90°, using a USB to connect the Arduino Nano to my computer. I then assembled the stand for the Arduino Nano and shield using standoffs and did the same for the ball-bearing base of the claw arm. Next, I added the servo for the base of the claw arm and attached a rectangular piece to it that would allow the servo to rotate the entire base. I then screwed together the claw arm with two servos, making sure that they were straight. Finally, I screwed in the servo for the claw and attached the claw half to it and lined up the other half with the first. I then assembled a simple controller using one of the acrylic plates and screwing in two joysticks. I then did the necessary wiring for the claw to properly work and be controllled by the claw. I uploaded the Arduino program, Arm.ino, provided by the tutorial to the Arduino Nano, allowing me to control the claw with the joysticks. 
 
 <h2>Challenges Faced</h2>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;One of the major problems I faced with the claw assembly was screwing in small screws into tiny nuts in tight spaces. It was quite difficult for me and wasted a lot of time. Eventually, I figured out a way to make it easier by always turning the claw over to a side in which the nut would be lying down to facilitate the screwing process. Another problem I faced was accidently attached the rectangular piece the wrong way on the base servo. This was an issue because one, the traction of the servo and the ball-bearing base was weak, leading to little rotation, and two, removing the servo arm from the rectangular piece is difficult. The servo arm is attached to the retangular piece using self-tapping screws which are difficult to remove once they are screwed in. It also did not help that the screwdriver I was using broke away from the handle, making it ineffective. I wasted more time trying to remove the self-tapping screws but managed to get them out using a plier that had a good grip on them. <br>
@@ -308,6 +312,193 @@ void loop() {
  myservo4.write(90);  //The servo is 90 degrees
  delay(1000);
  }
+```
+
+<h2>Arm.ino</h2>
+
+```c++
+/*
+ * This code applies to cokoino mechanical arm
+ * Through this link you can download the source code:
+ * https://github.com/Cokoino/CKK0006
+ * Company web site:
+ * http://cokoino.com/
+ *                                     ________
+ *                         ----|servo4| 
+ *                        |            --------
+ *                    |servo3|   
+ *                        |
+ *                        |
+ *                    |servo2|
+ *                        |
+ *                        |
+ *                  ___________
+ *                  |  servo1 |
+ *         ____________________
+ *         ____________________
+ * Fanctions:
+ * arm.servo1.read();   //read the servo of angle
+ * arm.servo2.read();
+ * arm.servo3.read();
+ * arm.servo4.read();
+ * 
+ * arm.servo1.write(angle);   //servo run
+ * arm.servo2.write(angle);
+ * arm.servo3.write(angle);
+ * arm.servo4.write(angle);
+ * 
+ * arm.left(speed);    //perform the action 
+ * arm.right(speed);
+ * arm.up(speed);
+ * arm.down(speed);
+ * arm.open(speed);
+ * arm.close(speed);
+ * 
+ * arm.captureAction();    //capture the current action,return pointer array
+ * arm.do_action(int *p,int speed);  //P is a pointer to the array
+ * 
+ * arm.JoyStickL.read_x(); //Returns joystick numerical
+ * arm.JoyStickL.read_y();
+ * arm.JoyStickR.read_x();
+ * arm.JoyStickR.read_y();
+ */
+#include "src/CokoinoArm.h"
+#define buzzerPin 9
+
+CokoinoArm arm;
+int xL,yL,xR,yR;
+
+const int act_max=10;    //Default 10 action,4 the Angle of servo
+int act[act_max][4];    //Only can change the number of action
+int num=0,num_do=0;
+///////////////////////////////////////////////////////////////
+void turnUD(void){
+  if(xL!=512){
+    if(0<=xL && xL<=100){arm.up(10);return;}
+    if(900<xL && xL<=1024){arm.down(10);return;} 
+    if(100<xL && xL<=200){arm.up(20);return;}
+    if(800<xL && xL<=900){arm.down(20);return;}
+    if(200<xL && xL<=300){arm.up(25);return;}
+    if(700<xL && xL<=800){arm.down(25);return;}
+    if(300<xL && xL<=400){arm.up(30);return;}
+    if(600<xL && xL<=700){arm.down(30);return;}
+    if(400<xL && xL<=480){arm.up(35);return;}
+    if(540<xL && xL<=600){arm.down(35);return;} 
+    }
+}
+///////////////////////////////////////////////////////////////
+void turnLR(void){
+  if(yL!=512){
+    if(0<=yL && yL<=100){arm.right(0);return;}
+    if(900<yL && yL<=1024){arm.left(0);return;}  
+    if(100<yL && yL<=200){arm.right(5);return;}
+    if(800<yL && yL<=900){arm.left(5);return;}
+    if(200<yL && yL<=300){arm.right(10);return;}
+    if(700<yL && yL<=800){arm.left(10);return;}
+    if(300<yL && yL<=400){arm.right(15);return;}
+    if(600<yL && yL<=700){arm.left(15);return;}
+    if(400<yL && yL<=480){arm.right(20);return;}
+    if(540<yL && yL<=600){arm.left(20);return;}
+  }
+}
+///////////////////////////////////////////////////////////////
+void turnCO(void){
+  if(xR!=512){
+    if(0<=xR && xR<=100){arm.close(0);return;}
+    if(900<xR && xR<=1024){arm.open(0);return;} 
+    if(100<xR && xR<=200){arm.close(5);return;}
+    if(800<xR && xR<=900){arm.open(5);return;}
+    if(200<xR && xR<=300){arm.close(10);return;}
+    if(700<xR && xR<=800){arm.open(10);return;}
+    if(300<xR && xR<=400){arm.close(15);return;}
+    if(600<xR && xR<=700){arm.open(15);return;}
+    if(400<xR && xR<=480){arm.close(20);return;}
+    if(540<xR && xR<=600){arm.open(20);return;} 
+    }
+}
+///////////////////////////////////////////////////////////////
+void date_processing(int *x,int *y){
+  if(abs(512-*x)>abs(512-*y))
+    {*y = 512;}
+  else
+    {*x = 512;}
+}
+///////////////////////////////////////////////////////////////
+void buzzer(int H,int L){
+  while(yR<420){
+    digitalWrite(buzzerPin,HIGH);
+    delayMicroseconds(H);
+    digitalWrite(buzzerPin,LOW);
+    delayMicroseconds(L);
+    yR = arm.JoyStickR.read_y();
+    }
+  while(yR>600){
+    digitalWrite(buzzerPin,HIGH);
+    delayMicroseconds(H);
+    digitalWrite(buzzerPin,LOW);
+    delayMicroseconds(L);
+    yR = arm.JoyStickR.read_y();
+    }
+}
+///////////////////////////////////////////////////////////////
+void C_action(void){
+  if(yR>800){
+    int *p;
+    p=arm.captureAction();
+    for(char i=0;i<4;i++){
+    act[num][i]=*p;
+    p=p+1;     
+    }
+    num++;
+    num_do=num;
+    if(num>=act_max){
+      num=0;
+      buzzer(600,400);
+      }
+    while(yR>600){yR = arm.JoyStickR.read_y();}
+    //Serial.println(act[0][0]);
+  }
+}
+///////////////////////////////////////////////////////////////
+void Do_action(void){
+  if(yR<220){
+    buzzer(200,300);
+    for(int i=0;i<num_do;i++){
+      arm.do_action(act[i],15);
+      }
+    num=0;
+    while(yR<420){yR = arm.JoyStickR.read_y();}
+    for(int i=0;i<2000;i++){
+      digitalWrite(buzzerPin,HIGH);
+      delayMicroseconds(200);
+      digitalWrite(buzzerPin,LOW);
+      delayMicroseconds(300);        
+    }
+  }
+}
+///////////////////////////////////////////////////////////////
+void setup() {
+  //Serial.begin(9600);
+  //arm of servo motor connection pins
+  arm.ServoAttach(4,5,6,7);
+  //arm of joy stick connection pins : xL,yL,xR,yR
+  arm.JoyStickAttach(A0,A1,A2,A3);
+  pinMode(buzzerPin,OUTPUT);
+}
+///////////////////////////////////////////////////////////////
+void loop() {
+  xL = arm.JoyStickL.read_x();
+  yL = arm.JoyStickL.read_y();
+  xR = arm.JoyStickR.read_x();
+  yR = arm.JoyStickR.read_y();
+  date_processing(&xL,&yL);
+  date_processing(&xR,&yR);
+  turnUD();
+  turnLR();
+  turnCO();
+  C_action();
+  Do_action();
+}
 ```
 
 # First Milestone (A.I. Powered Claw Car)
