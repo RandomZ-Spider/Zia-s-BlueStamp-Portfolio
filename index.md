@@ -27,7 +27,7 @@
 
 <h1>Summary</h1>
 <h2>Project</h2>
-My project is an A.I. Powered Claw Car, a robot that travels using 2 wheels controlled by servos and has a claw attatched on top. Using a raspberry camera module and an object identification A.I. program, it is capable of identifying various objects based a training data set and pick them up with the claw. <br>
+My project is an A.I. Powered Claw Car, a robot that travels using 2 wheels controlled by servos and has a claw attached on top. Using a raspberry camera module and an object identification A.I. program, it is capable of identifying various objects based a training data set and pick them up with the claw. <br>
 
 <h2>Components</h2>
 <ul>
@@ -38,7 +38,7 @@ My project is an A.I. Powered Claw Car, a robot that travels using 2 wheels cont
 </ul>
 
 <h2>How Components Work Together</h2>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The ultrasonic sensors measure distance by sending out a 40,000 hertz sound wave and receives the pulse coming from the echo of the wave. The microcontroller (the controller board) uses a program to calculate the distance by taking the time it took for the sound wave to come back using the equation distance is equal to time divided by 2 (taking into account the wave going back and forth) times the speed of sound (340 m/s). The OLED display uses 8192 bits which turn on or off, and using the Adafruit library, the OLED can be programmed to display text and images by turning off and on certain bits. The system uses the first ultrasonic sensor to get the distance in cm, and then the OLED takes the distance as an integer value and constantly displays the current distance. The Hexapod also uses the distance value to determine when to dance. The first ultrasonic sensor and OLED display are both attached to a cardboard piece each to make it easier to mount to the Hexapod, and the pins poke through to allow connection to the controller board from behind. The other two ultrasonic sensors are attatched to mounts which I modeled and 3D printed on both sides of the Hexapod. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The ultrasonic sensors measure distance by sending out a 40,000 hertz sound wave and receives the pulse coming from the echo of the wave. The microcontroller (the controller board) uses a program to calculate the distance by taking the time it took for the sound wave to come back using the equation distance is equal to time divided by 2 (taking into account the wave going back and forth) times the speed of sound (340 m/s). The OLED display uses 8192 bits which turn on or off, and using the Adafruit library, the OLED can be programmed to display text and images by turning off and on certain bits. The system uses the first ultrasonic sensor to get the distance in cm, and then the OLED takes the distance as an integer value and constantly displays the current distance. The Hexapod also uses the distance value to determine when to dance. The first ultrasonic sensor and OLED display are both attached to a cardboard piece each to make it easier to mount to the Hexapod, and the pins poke through to allow connection to the controller board from behind. The other two ultrasonic sensors are attached to mounts which I modeled and 3D printed on both sides of the Hexapod. 
 
 <h2>What I Accomplished</h2> <!-- What I did in previous milestones and what I did for third milestone. -->
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; In the previous milestones, I assembled and calibrated the Hexapod, programmed a dance, and built a battery stand. For the third milestone, I added three ultrasonic sensors and an OLED display to the Hexapod. I also programmed the Hexapod to display the measured distance on the OLED. I also programmed it to walk around randomly and dance whenever the ultrasonic sensor detects a distance of 5 cm or less. Using the other two sensors, the Hexapod is also able to traverse through hallways, meaning that whenever it reaches a wall, the Hexapod will dance, check for a gap on each side, and turn towards the gap if found; otherwise, the Hexapod would turn 180 degrees and continue walking. Currently, the dance for the Hexapod is just a boogie, but originally it was longer and more varied. I had to change it because it would not be able to go through hallways due to the change in position.  
@@ -255,13 +255,12 @@ void MiniDance()
 <iframe width="901" height="507" src="https://www.youtube.com/embed/BK9GC6PL-00" title="Zia S. Milestone 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 <p float="left">
-  <img src="Picture-Hexapod-V2.jpg" width="534.9527" height="400">
-  <img src="Picture-Battery-Holder.jpg" width="315.7230" height="400"> 
+  <img src="Claw_Pic.jpg" width="534.9527" height="400"> 
 </p>
 
 <h1>Summary</h1>
 <h2>Project</h2>
-My project is an A.I. Powered Claw Car, a robot that travels using 2 wheels controlled by servos and has a claw attatched on top. Using a raspberry camera module and an object identification A.I. program, it is capable of identifying various objects based a training data set and pick them up with the claw. <br>
+My project is an A.I. Powered Claw Car, a robot that travels using 2 wheels controlled by servos and has a claw attached on top. Using a raspberry camera module and an object identification A.I. program, it is capable of identifying various objects based a training data set and pick them up with the claw. <br>
 
 <h2>Components</h2>
 <ul>
@@ -274,174 +273,41 @@ My project is an A.I. Powered Claw Car, a robot that travels using 2 wheels cont
 </ul>
 
 <h2>How Components Work Together</h2>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The acrylic parts make up the body of the Hexapod and hold the servos and robot controller in place. The robot controller controls all of the servos in order to perform actions such as walking, turning, or raising body height. The WLAN module that is attached to the Hexapod creates a hotspot that can be connected to through a computer or phone and then the Hexapod can be controlled through an app or the Processing software on the computer. The USB cable allows for Arduino sketches to be uploaded to the robot controller so that the Hexapod can have a custom program. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The acrylic parts of the claw act as the base and main body that house the servos, Arduino Nano, and Arduino shield. The base of the claw has a servo that rotates a ball-bearing wheel, rotatating the entire claw. Two other servos control the arm of the claw, making it capable of moving up or down. The final servo controls the actual claw; it is attached to one claw half with a gear at the end that is in contact with the gear of the other claw half so when the servo rotates, the entire claw grabs or releases. The servos are controlled by two joysticks that are connected to the Arduino Nano; one controls the rotation and position of the claw arm and the other control the claw itself. 
 
 <h2>Progress</h2>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;For the second milestone, I cut out and drilled a battery holder that goes on top of the Hexapod to hold the 7.2 volt battery. The Hexapod is now able to move around without being dragged down by the battery. I also programmed a dance for the Hexapod using the FNHR library to access functions that control certain aspects of the Hexapod's movement, such as walking and turning. Only a few hours were necessary to program the dance, and I then uploaded the sketch to the control board so that whenever I turn on the Hexapod, it does a dance using many functions such as a robot.CrawlForward and robot.Rotate().
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;For the second milestone, I had to cut the ground and voltage wires of the battery port of the claw and solder them to a new battery case as lithium batteries are not allowed in Bluestamp projects. Before beginning assembly, I used an Arduino program provided by the pdf claw tutorial to adjust the servos to all be 90°, using a USB to connect the Arduino Nano to my computer. I then assembled the stand for the Arduino Nano and shield using standoffs and did the same for the ball-bearing base of the claw arm. Next, I added the servo for the base of the claw arm and attached a rectangular piece to it that would allow the servo to rotate the entire base. I then screwed together the claw arm with two servos, making sure that they were straight. Finally, I screwed in the servo for the claw and attached the claw half to it and lined up the other half with the first. I then assembled a simple controller using one of the acrylic plates and screwing in two joysticks. I then did the necessary wiring for the claw to properly work and be controllled by the claw. I uploaded the code provided by the tutorial to the Arduino Nano, allowing me to control the claw with the joysticks. 
 
 <h2>Challenges Faced</h2>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;At first, I used Onshape, a 3D modeling software, to design a battery holder for the Hexapod. I later found out that due to the model's overhangs, it would take a very long time to 3D print the model and the necessary supports. With this in mind, I created a new 3D model for the battery holder, a plate with holes that fit screws, and the battery is held down to the plate using a hot-glued velcro strap. Although, one of my mentors, Ricky, said that it would be faster to cut out a wood plate by hand rather than print it since the 3D model was not intricate enough to justify using a 3D printer. The first time I cut out a battery holder and drilled holes for the screws, the holes did not match with Hexapod so I had to make a new plate. The second plate's also did not match and I later found out that I was using the wrong side of the caliper, a digital ruler, for measuring. For the third plate, I had to be very precise with the measurements, down to the micrometer. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;One of the major problems I faced with the claw assembly was screwing in small screws into tiny nuts in tight spaces. It was quite difficult for me and wasted a lot of time. Eventually, I figured out a way to make it easier by always turning the claw over to a side in which the nut would be lying down to facilitate the screwing process. Another problem I faced was accidently attached the rectangular piece the wrong way on the base servo. This was an issue because one, the traction of the servo and the ball-bearing base was weak, leading to little rotation, and two, removing the servo arm from the rectangular piece is difficult. The servo arm is attached to the retangular piece using self-tapping screws which are difficult to remove once they are screwed in. It also did not help that the screwdriver I was using broke away from the handle, making it ineffective. I wasted more time trying to remove the self-tapping screws but managed to get them out using a plier that had a good grip on them. <br>
 
 <h2>Next Step</h2>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;With the battery holder, the Hexapod can now go anywhere, contributing to my final milestone: adding an ultrasound sensor to the Hexapod and programming it to randomly walk around a room and use the ultrasound sensor to determine when it should dance. The second part of the final milestone is adding an LCD (Liquid Crystal Display) that shows what distance the ultrasound sensor measures. Before starting my final milestone, I need to learn more about ultrasound sensors and LCDs, how they work, and how to program them with Arduino. <br> <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;My third milestone will be mounting the claw onto the car and programming them to be controlled by the same controller by making communication between the Arduino Uno of the car and Arduino Nano of the claw possible. I must learn how to make communication between two Arduino board possible and how to make a custom controller for the robot. <br> <br>
 
-<!--<img src="Picture-Hexapod-V2.jpg"  width="700" height="523.4107">
-
-<img src="Picture-Battery-Holder.jpg"  width="650" height="823.5069">-->
-
-<h2>Hexapod_Dance.ino</h2>
+<h2>Servo_90_ADJ.ino</h2>
 
 ```c++
-#include <FNHR.h>
+#include<Servo.h>
+Servo myservo1;  // Create a servo class
+Servo myservo2;  // Create a servo class
+Servo myservo3;  // Create a servo class
+Servo myservo4;  // Create a servo class
 
-FNHR robot;
-int rotate = 20;
-
-void Dance()
-{
-  robot.SetActionSpeed(50);
-
-  for (int i = 0; i < 5; i++)
-  {
-    robot.CrawlBackward();
-  }
-
-  delay(500);
-
-  //Max height is 50
-
-  // Dance Move 1
-  for (int i = 0; i < 4; i++)
-  {
-    robot.SetActionSpeed(200);
-    robot.ChangeBodyHeight(50);
-    robot.ChangeBodyHeight(30);
-  }
-  
-
-  // Dance Move 2
-  robot.RotateBody(100, 0, 0);
-  robot.RotateBody(100, 100, 0);
-  robot.RotateBody(0, 100, 0);
-  robot.RotateBody(-100, 100, 0);
-  robot.RotateBody(-100, 0, 0);
-  robot.RotateBody(-100, -100, 0);
-  robot.RotateBody(0, -100, 0);
-  robot.RotateBody(100, -100, 0);
-  robot.RotateBody(0, 0, 0);
-
-  // Dance Move 3
-
-  // Each turn command is 5.625 degrees ish
-  for (int i = 0; i < 8; i++)
-  {
-    robot.TurnRight();
-  }
-
-  //Body twist
-  robot.RotateBody(0, 0, 100);
-  robot.RotateBody(0, 0, -100);
-  robot.RotateBody(0, 0, 0);
-
-  // Dance Move 4
-
-  // Square dance
-  for (int i = 0; i < 2; i++)
-  {
-    robot.CrawlForward();
-    robot.CrawlRight();
-    robot.CrawlBackward();
-    robot.CrawlLeft();
-    robot.CrawlForward();
-  }
-
-  // Dance Move 5
-
-  for (int i = 0; i < 8; i++)
-  {
-    robot.TurnLeft();
-  }
-
-  robot.ChangeBodyHeight(0);
-  robot.ChangeBodyHeight(50);
-
-  for (int i = 0; i < 8; i++)
-  {
-    robot.TurnLeft();
-  }
-
-  // Dance Move 6
-
-  //Body twist
-  robot.RotateBody(0, 0, 100);
-  robot.RotateBody(0, 0, -100);
-  robot.RotateBody(0, 0, 0);
-
-  // Square dance
-  for (int i = 0; i < 2; i++)
-  {
-    robot.CrawlForward();
-    robot.CrawlRight();
-    robot.CrawlBackward();
-    robot.CrawlLeft();
-    robot.CrawlForward();
-  }
-
-  delay(200);
-
-  // Dance Move 7
-
-  for (int i = 0; i < 8; i++)
-  {
-    robot.TurnRight();
-  }
-
-  robot.CrawlRight();
-  delay(500);
-  robot.CrawlLeft();
-  robot.CrawlLeft();
-  delay(600);
-
-  for (int i = 0; i < 4; i++)
-  {
-    robot.CrawlLeft();
-    robot.CrawlRight();
-  }
-
-  delay(900);
-  robot.CrawlRight();
-
-  // Bowing
-  delay(800);
-  robot.ChangeBodyHeight(50);
-  robot.RotateBody(50, 0, 0);
-  robot.ChangeBodyHeight(50);
-  robot.TurnRight();
-  robot.RotateBody(50, 0, 0);
-  robot.ChangeBodyHeight(50);
-  robot.TurnLeft();
-  robot.TurnLeft();
-  robot.RotateBody(50, 0, 0);
-  robot.RotateBody(0, 0, 0);
-  robot.TurnRight();
-  robot.ChangeBodyHeight(50);
-
-  delay(100);
-
-
+void setup() {  
+myservo1.attach(4);  //Set the servo control pin as D4
+myservo2.attach(5);  //Set the servo control pin as D5
+myservo3.attach(6);  //Set the servo control pin as D6
+myservo4.attach(7);  //Set the servo control pin as D7
+delay(100);          //delay 100ms 
 }
-
-void setup() 
-{
-  robot.Start();
-  Dance();
-}
-
-void loop() 
-{
-  
-  
-}
+/////////////////////////////////////////////////////////
+void loop() {
+ myservo1.write(90);  //The servo is 90 degrees
+ myservo2.write(90);  //The servo is 90 degrees
+ myservo3.write(90);  //The servo is 90 degrees
+ myservo4.write(90);  //The servo is 90 degrees
+ delay(1000);
+ }
 ```
 
 # First Milestone (A.I. Powered Claw Car)
@@ -453,7 +319,7 @@ void loop()
 <h1>Summary</h1>
 
 <h2>Project</h2>
-My project is an A.I. Powered Claw Car, a robot that travels using 2 wheels controlled by servos and has a claw attatched on top. Using a raspberry camera module and an object identification A.I. program, it is capable of identifying various objects based a training data set and pick them up with the claw. <br>
+My project is an A.I. Powered Claw Car, a robot that travels using 2 wheels controlled by servos and has a claw attached on top. Using a raspberry camera module and an object identification A.I. program, it is capable of identifying various objects based a training data set and pick them up with the claw. <br>
 
 <h2>Components</h2>
 <ul>
@@ -473,12 +339,12 @@ My project is an A.I. Powered Claw Car, a robot that travels using 2 wheels cont
 </ul> <br>
 
 <h2>How Components Work Together</h2>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The acrylic plate acts as the base of the car; everything including the servos, Arduino Uno, mini breadboard, L9110 module, universal wheel, and 9V Battery is attatched to it. Whenever a button is pressed on the IR controller, the IR reciever recieves the signal and sends it to the Arduino Uno. The Uno then processes the signal and depending on the button pressed, sends a signal to the L9110 module with the specific activation truth table. This activates the motors and moves the car. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The acrylic plate acts as the base of the car; everything including the servos, Arduino Uno, mini breadboard, L9110 module, universal wheel, and 9V Battery is attached to it. Whenever a button is pressed on the IR controller, the IR reciever recieves the signal and sends it to the Arduino Uno. The Uno then processes the signal and depending on the button pressed, sends a signal to the L9110 module with the specific activation truth table. This activates the motors and moves the car. 
 
 <h2>Progress</h2>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;For the first milestone, I assembled the whole car and downloaded the necessary software, such as the Arduino library IRRemote and the Processing IDE, to control the car using the IR remote. 
 <h2>Challenges Faced</h2>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; I had a few troubles attatching the motors to the acrylic plate as the window for attatchment was very tight and took me a bit to attatch. I also wasted much time looking for specific standoffs that were missing from my kit that were needed for the universal wheel and ended up having to use slightly longer standoffs. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; I had a few troubles attaching the motors to the acrylic plate as the window for attachment was very tight and took me a bit to attach. I also wasted much time looking for specific standoffs that were missing from my kit that were needed for the universal wheel and ended up having to use slightly longer standoffs. 
 
 <h2>Next Step</h2>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The next step is completing my second milestone: assembling the claw and programming it.<br><br>
@@ -727,7 +593,7 @@ Materials:
 
 Procedure: 
 1. First, I soldered all of the main parts to the PCB; I soldered the 6 buttons, then the micro USB, then the capacitor, then the self-lock switch, then the digitron display, and finally the dot matrix modules.
-2. Second, I soldered the ground and voltage wires of the battery case to the PCB, attatched the case to an acrylic shell using screws, and attatched the button caps to all of the buttons.
+2. Second, I soldered the ground and voltage wires of the battery case to the PCB, attached the case to an acrylic shell using screws, and attached the button caps to all of the buttons.
 3. Finally, I assembled the acyrlic cage using mutiples screws and columns to space out the console. 
 
 
@@ -775,7 +641,7 @@ My project is the Hexapod, a robot that walks on 6 legs using multiple servos an
 </ul>
 
 <h2>How Components Work Together</h2>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The ultrasonic sensors measure distance by sending out a 40,000 hertz sound wave and receives the pulse coming from the echo of the wave. The microcontroller (the controller board) uses a program to calculate the distance by taking the time it took for the sound wave to come back using the equation distance is equal to time divided by 2 (taking into account the wave going back and forth) times the speed of sound (340 m/s). The OLED display uses 8192 bits which turn on or off, and using the Adafruit library, the OLED can be programmed to display text and images by turning off and on certain bits. The system uses the first ultrasonic sensor to get the distance in cm, and then the OLED takes the distance as an integer value and constantly displays the current distance. The Hexapod also uses the distance value to determine when to dance. The first ultrasonic sensor and OLED display are both attached to a cardboard piece each to make it easier to mount to the Hexapod, and the pins poke through to allow connection to the controller board from behind. The other two ultrasonic sensors are attatched to mounts which I modeled and 3D printed on both sides of the Hexapod. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The ultrasonic sensors measure distance by sending out a 40,000 hertz sound wave and receives the pulse coming from the echo of the wave. The microcontroller (the controller board) uses a program to calculate the distance by taking the time it took for the sound wave to come back using the equation distance is equal to time divided by 2 (taking into account the wave going back and forth) times the speed of sound (340 m/s). The OLED display uses 8192 bits which turn on or off, and using the Adafruit library, the OLED can be programmed to display text and images by turning off and on certain bits. The system uses the first ultrasonic sensor to get the distance in cm, and then the OLED takes the distance as an integer value and constantly displays the current distance. The Hexapod also uses the distance value to determine when to dance. The first ultrasonic sensor and OLED display are both attached to a cardboard piece each to make it easier to mount to the Hexapod, and the pins poke through to allow connection to the controller board from behind. The other two ultrasonic sensors are attached to mounts which I modeled and 3D printed on both sides of the Hexapod. 
 
 <h2>What I Accomplished</h2> <!-- What I did in previous milestones and what I did for third milestone. -->
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; In the previous milestones, I assembled and calibrated the Hexapod, programmed a dance, and built a battery stand. For the third milestone, I added three ultrasonic sensors and an OLED display to the Hexapod. I also programmed the Hexapod to display the measured distance on the OLED. I also programmed it to walk around randomly and dance whenever the ultrasonic sensor detects a distance of 5 cm or less. Using the other two sensors, the Hexapod is also able to traverse through hallways, meaning that whenever it reaches a wall, the Hexapod will dance, check for a gap on each side, and turn towards the gap if found; otherwise, the Hexapod would turn 180 degrees and continue walking. Currently, the dance for the Hexapod is just a boogie, but originally it was longer and more varied. I had to change it because it would not be able to go through hallways due to the change in position.  
