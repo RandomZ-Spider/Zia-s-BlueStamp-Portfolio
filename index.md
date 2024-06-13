@@ -511,7 +511,7 @@ void loop() {
 
 # First Milestone (A.I. Powered Claw Car)
 
-<iframe width="901" height="507" src="https://www.youtube.com/watch?v=uxMxAbv3sPU&t=3s" title="Zia S. First Milestone" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe src="https://www.w3schools.com" title="W3Schools Free Online Web Tutorials"></iframe>
 
 <img src="Car_Pic.jpg"  width="500" height="474.375">
 
