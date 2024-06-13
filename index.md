@@ -511,7 +511,7 @@ void loop() {
 
 # First Milestone (A.I. Powered Claw Car)
 
-<iframe src="https://www.w3schools.com" title="W3Schools Free Online Web Tutorials"></iframe>
+<iframe width="901" height="507" src="[https://www.youtube.com/watch?v=mGiasDcI_J0](https://www.youtube.com/watch?v=jHtg-IWIxA0)" title="Zia S. Milestone 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 <img src="Car_Pic.jpg"  width="500" height="474.375">
 
@@ -811,6 +811,8 @@ To watch the BSE tutorial on how to create a portfolio, click here.-->
 ![Picture of Zia](Zia-Headshot-Large.png)
 
 # Final Milestone (Hexapod)
+
+<iframe width="901" height="507" src="https://www.youtube.com/embed/uxMxAbv3sPU" title="Zia S. Milestone 3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 <iframe width="901" height="507" src="https://www.youtube.com/embed/uxMxAbv3sPU" title="Zia S. Milestone 3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
