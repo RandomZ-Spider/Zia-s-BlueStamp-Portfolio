@@ -511,13 +511,7 @@ void loop() {
 
 # First Milestone (A.I. Powered Claw Car)
 
-<object width="425" height="350">
-  <param name="movie" value="https://www.youtube.com/watch?v=hHAm_oHuuT8&t=85s" />
-  <param name="wmode" value="transparent" />
-  <embed src="https://www.youtube.com/watch?v=hHAm_oHuuT8&t=85s"
-         type="application/x-shockwave-flash"
-         wmode="transparent" width="425" height="350" />
-</object>
+<iframe width="901" height="507" src="https://www.youtube.com/watch?v=jHtg-IWIxA0" title="Zia S. First Milestone" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 <img src="Car_Pic.jpg"  width="500" height="474.375">
 
