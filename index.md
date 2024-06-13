@@ -325,7 +325,7 @@ void loop() {
 <h2>Schematic</h2>
 
 <p float="left">
-  <img src="M2_Schematic.jpg" width="600" height="374.7417"> 
+  <img src="M2_Schematic.jpg" alt="Provided by Cokoino" width="600" height="374.7417"> 
 </p>
 
 <h2>Arm.ino</h2>
@@ -559,7 +559,7 @@ My project is an A.I. Powered Claw Car, a robot that travels using 2 wheels cont
 <h2>Schematic</h2>
 
 <p float="left">
-  <img src="M1_Schematic.jpg" width="700" height="565.7443"> 
+  <img src="M1_Schematic.jpg" alt="Provided by SunFounder at https://docs.sunfounder.com/projects/3in1-kit-v2/en/latest/car_project/car_remote_control.html" width="700" height="565.7443"> 
 </p>
   
 ```c++
