@@ -252,10 +252,10 @@ void MiniDance()
 
 # Second Milestone (A.I. Powered Claw Car)
 
-<iframe width="901" height="507" src="https://www.youtube.com/watch?v=mGiasDcI_J0" title="Zia S. Milestone 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="1177" height="662" src="https://www.youtube.com/embed/mGiasDcI_J0" title="Zia S. Second Milestone" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 <p float="left">
-  <img src="Claw_Pic.jpg" width="534.9527" height="400"> 
+  <img src="Claw_Pic.jpg" width="534.9527" height="500"> 
 </p>
 
 <h1>Summary</h1>
@@ -321,6 +321,12 @@ void loop() {
  delay(1000);
  }
 ```
+
+<h2>Schematic</h2>
+
+<p float="left">
+  <img src="M2_Schematic.jpg" width="600" height="374.7417"> 
+</p>
 
 <h2>Arm.ino</h2>
 
@@ -511,9 +517,7 @@ void loop() {
 
 # First Milestone (A.I. Powered Claw Car)
 
-<iframe width="901" height="507" src="https://www.youtube.com/watch?v=jHtg-IWIxA0" title="Zia S. First Milestone" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-<iframe width="901" height="507" src="https://www.youtube.com/embed/uxMxAbv3sPU" title="Zia S. Milestone 3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="1177" height="662" src="https://www.youtube.com/embed/jHtg-IWIxA0" title="Zia S. First Milestone" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 <img src="Car_Pic.jpg"  width="500" height="474.375">
 
@@ -551,6 +555,12 @@ My project is an A.I. Powered Claw Car, a robot that travels using 2 wheels cont
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The next step is completing my second milestone: assembling the claw and programming it.<br><br>
 
 <h2>Car_Remote_Control.ino</h2>
+
+<h2>Schematic</h2>
+
+<p float="left">
+  <img src="M1_Schematic.jpg" width="700" height="565.7443"> 
+</p>
   
 ```c++
 #include <IRremote.h>
@@ -764,7 +774,7 @@ Don't forget to place the link of where to buy each component inside the quotati
 
 # Starter Project (Retro Arcade Console)
 
-<iframe width="901" height="507" src="https://www.youtube.com/watch?v=hHAm_oHuuT8&t=85s" title="Zia S. Starter Project" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="1177" height="662" src="https://www.youtube.com/embed/hHAm_oHuuT8" title="Zia C. Starter Project" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ![Picture of Starter Project](Starter_Project2.jpg)
 
