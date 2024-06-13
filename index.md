@@ -291,6 +291,14 @@ My project is an A.I. Powered Claw Car, a robot that travels using 2 wheels cont
 <h2>Servo_90_ADJ.ino</h2>
 
 ```c++
+//
+/*
+ * This code applies to cokoino mechanical arm
+ * Through this link you can download the source code:
+ * https://github.com/Cokoino/CKK0006
+ * Company web site:
+ * http://cokoino.com/
+
 #include<Servo.h>
 Servo myservo1;  // Create a servo class
 Servo myservo2;  // Create a servo class
@@ -503,7 +511,13 @@ void loop() {
 
 # First Milestone (A.I. Powered Claw Car)
 
-<iframe width="901" height="507" src="https://www.youtube.com/watch?v=jHtg-IWIxA0"Zia S. Milestone 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<object width="425" height="350">
+  <param name="movie" value="https://www.youtube.com/watch?v=hHAm_oHuuT8&t=85s" />
+  <param name="wmode" value="transparent" />
+  <embed src="https://www.youtube.com/watch?v=hHAm_oHuuT8&t=85s"
+         type="application/x-shockwave-flash"
+         wmode="transparent" width="425" height="350" />
+</object>
 
 <img src="Car_Pic.jpg"  width="500" height="474.375">
 
