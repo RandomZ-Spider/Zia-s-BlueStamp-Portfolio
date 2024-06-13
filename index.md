@@ -328,6 +328,11 @@ void loop() {
   <img src="M2_Schematic.jpg" alt="Provided by Cokoino" width="600" height="374.7417"> 
 </p>
 
+<figure>
+  <img src="M2_Schematic.jpg" alt="Provided by Cokoino" width="600" height="374.7417">
+  <figcaption>Provided by Cokoino.</figcaption>
+</figure>
+
 <h2>Arm.ino</h2>
 
 ```c++
